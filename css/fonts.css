@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@font-face {
+  font-family: 'SoyuzGrotesk';
+  src: url('../fonts/SoyuzGroteskBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+h1,
+h2 {
+  font-family: 'SoyuzGrotesk', sans-serif;
+}
