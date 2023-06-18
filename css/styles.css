@@ -2,27 +2,6 @@ body {
   width: 414px;
 }
 
-header,
-footer,
-.main-rent,
-.main-reason,
-.main-how,
-.main-price,
-.main-carousel {
-  background-color: #111111;
-}
-
-.main-location,
-.main-security {
-  color: black;
-  background-color: #ffffff;
-}
-
-.main-catalog {
-  color: black;
-  background-image: -webkit-linear-gradient(-30deg, #abc2e8, #f2bcb9, #f5a366);
-}
-
 .header-container,
 .header-contacts {
   display: flex;
@@ -38,19 +17,6 @@ footer,
   width: 40px;
 }
 
-.logo-text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 30px;
-
-  background: -webkit-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 nav {
   width: 50%;
 }
@@ -58,6 +24,17 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
+}
+
+.main-reason li::before,
+.main-how li::before {
+  content: 'X';
+  margin-right: 0.5em;
+  font-weight: 400;
+
+  background: -webkit-linear-gradient(-90deg, #abc2e8, #f2bcb9, #f5a366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -73,9 +50,5 @@ nav ul {
 
   .logo {
     width: 50px;
-  }
-
-  .logo-text {
-    font-size: 22px;
   }
 }

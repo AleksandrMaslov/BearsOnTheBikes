@@ -1,0 +1,30 @@
+.logo-text {
+  background: -webkit-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-price h3 {
+  background: -webkit-linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header,
+footer,
+.main-rent,
+.main-reason,
+.main-how,
+.main-price,
+.main-carousel {
+  background-color: #111111;
+}
+
+.main-location,
+.main-security {
+  background-color: #ffffff;
+}
+
+.main-catalog {
+  background-image: -webkit-linear-gradient(-30deg, #abc2e8, #f2bcb9, #f5a366);
+}
