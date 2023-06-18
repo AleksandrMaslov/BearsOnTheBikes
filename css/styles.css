@@ -71,12 +71,43 @@ nav ul {
   margin-bottom: 10px;
 }
 
-.main-reason ul:last-child {
-  margin-bottom: 80px;
+.main-reason ul {
+  margin-bottom: 70px;
 }
 
 .main-reason h2 {
   margin-bottom: 30px;
+}
+
+.main-catalog {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.main-security {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+}
+
+.main-security h2 {
+  margin-bottom: 30px;
+}
+
+.main-how {
+  padding: 80px 20px;
+}
+
+.main-how h2 {
+  margin-bottom: 30px;
+}
+
+.main-how li {
+  margin-bottom: 10px;
+}
+
+.main-how p {
+  margin-top: 20px;
 }
 
 .main-reason li::before,
@@ -155,5 +186,27 @@ nav ul {
 
   .main-reason ul:last-child {
     margin-bottom: 160px;
+  }
+
+  .main-catalog {
+    padding: 160px 0;
+  }
+
+  .main-security {
+    display: flex;
+    flex-direction: row;
+    padding: 160px;
+  }
+
+  .main-security h2 {
+    margin-right: 145px;
+  }
+
+  .main-security p {
+    width: 545;
+  }
+
+  .main-how {
+    padding: 160px;
   }
 }
