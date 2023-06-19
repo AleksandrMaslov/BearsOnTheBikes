@@ -1,16 +1,11 @@
-header,
-footer,
-.main-rent,
-.main-reason,
-.main-how,
-.main-price,
-.main-carousel {
-  background-color: #111111;
-}
-
+html,
 .main-location,
 .main-security {
   background-color: #ffffff;
+}
+
+body {
+  background-color: #111111;
 }
 
 .logo-text {
