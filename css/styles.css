@@ -185,10 +185,6 @@ footer a {
   content: 'X';
   margin-right: 0.5em;
   font-weight: 400;
-
-  background: -webkit-linear-gradient(-90deg, #abc2e8, #f2bcb9, #f5a366);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {

@@ -1,13 +1,17 @@
 .logo-text {
   background: -webkit-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: -moz-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -ms-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -o-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
+  background: linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
 }
 
 .main-price h3 {
   background: -webkit-linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: -moz-linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -ms-linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -o-linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
+  background: linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
 }
 
 header,
@@ -27,4 +31,34 @@ footer,
 
 .main-catalog {
   background-image: -webkit-linear-gradient(-30deg, #abc2e8, #f2bcb9, #f5a366);
+  background-image: -moz-linear-gradient(-30deg, #abc2e8, #f2bcb9, #f5a366);
+  background-image: -ms-linear-gradient(-30deg, #abc2e8, #f2bcb9, #f5a366);
+  background-image: -o-linear-gradient(-30deg, #abc2e8, #f2bcb9, #f5a366);
+  background-image: linear-gradient(-30deg, #abc2e8, #f2bcb9, #f5a366);
+}
+
+.main-reason li::before,
+.main-how li::before {
+  background: -webkit-linear-gradient(-90deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -moz-linear-gradient(-90deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -ms-linear-gradient(-90deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -o-linear-gradient(-90deg, #abc2e8, #f2bcb9, #f5a366);
+  background: linear-gradient(-90deg, #abc2e8, #f2bcb9, #f5a366);
+}
+
+.logo-text,
+.main-price h3,
+.main-reason li::before,
+.main-how li::before {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  color: transparent;
 }
