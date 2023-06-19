@@ -30,6 +30,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/background.css" />
     <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/carousel-2d.css" />
+    <link rel="stylesheet" href="css/carousel-3d.css" />
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/fonts.css" />
@@ -156,7 +158,28 @@
         </div>
       </section>
 
-      <section class="main-carousel"></section>
+      <section class="main-carousel">
+        <div id="carousel" class="carousel">
+          <button class="arrow prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </button>
+
+          <div class="gallery">
+            <ul class="gallery-list">
+              <li class="gallery-element"><img src="img/bike04.jpg" /></li>
+              <li class="gallery-element"><img src="img/bike05.jpg" /></li>
+              <li class="gallery-element"><img src="img/bike06.jpg" /></li>
+              <li class="gallery-element"><img src="img/bike04.jpg" /></li>
+              <li class="gallery-element"><img src="img/bike05.jpg" /></li>
+              <li class="gallery-element"><img src="img/bike06.jpg" /></li>
+            </ul>
+          </div>
+
+          <button class="arrow next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
 
       <section class="main-location">
         <div>
@@ -213,6 +236,41 @@
           this.classList.toggle('opened')
           document.querySelector('.nav').classList.toggle('opened')
         })
+    </script>
+
+    <script>
+      let position = 0
+      let count = 1
+      let gallery = carousel.querySelector('.gallery')
+      let list = carousel.querySelector('.gallery-list')
+      let listElem = carousel.querySelector('.gallery-element')
+      let listElems = carousel.querySelectorAll('.gallery-element')
+
+      carousel.querySelector('.prev').onclick = function () {
+        const [offset, maxPosition] = getData()
+        position += offset
+        position = Math.min(position, 0)
+        list.style.marginLeft = position + 'px'
+      }
+
+      carousel.querySelector('.next').onclick = function () {
+        const [offset, maxPosition] = getData()
+        position -= offset
+        position = Math.max(position, maxPosition)
+        list.style.marginLeft = position + 'px'
+      }
+
+      function getData() {
+        const width = listElem.offsetWidth
+        const maxPosition = gallery.offsetWidth - width * listElems.length
+        const elementMargins = (gallery.offsetWidth - width) / 2
+        const offset =
+          width * count === elementMargins
+            ? width * count
+            : width * count - elementMargins
+
+        return [offset, maxPosition]
+      }
     </script>
   </body>
 </html>

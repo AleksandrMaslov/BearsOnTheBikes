@@ -52,6 +52,10 @@ nav {
   color: black;
 }
 
+.arrow {
+  font-size: 17px;
+}
+
 .footer-social {
   font-size: 35px;
 }
@@ -88,5 +92,9 @@ i.fa-vk {
 
   .logo-text {
     font-size: 22px;
+  }
+
+  .arrow {
+    font-size: 30px;
   }
 }

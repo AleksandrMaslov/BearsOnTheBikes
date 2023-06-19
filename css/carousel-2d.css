@@ -1,0 +1,85 @@
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  z-index: 5;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(152, 149, 149, 0.2);
+  text-align: center;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: rgba(152, 149, 149, 0.6);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.gallery {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 100%;
+  width: 9999px;
+  list-style: none;
+  transition: margin-left 500ms;
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 384px;
+  height: 100%;
+}
+
+.gallery li > img {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+@media (min-width: 1440px) {
+  .arrow {
+    width: 60px;
+    height: 60px;
+  }
+
+  .prev {
+    left: 45px;
+  }
+
+  .next {
+    right: 45px;
+  }
+
+  .gallery li {
+    width: 480px;
+  }
+}

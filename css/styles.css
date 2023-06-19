@@ -127,6 +127,10 @@ button:hover {
   margin-right: 0;
 }
 
+.main-carousel {
+  height: 400px;
+}
+
 .main-location {
   display: flex;
   flex-wrap: nowrap;
@@ -304,6 +308,10 @@ footer a {
     border-right: 1px gray solid;
     padding-right: 40px;
     margin-right: 40px;
+  }
+
+  .main-carousel {
+    height: 500px;
   }
 
   .main-location {
