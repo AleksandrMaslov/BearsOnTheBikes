@@ -62,10 +62,10 @@
 
       <nav class="nav">
         <ul type="none">
-          <li><a href="#">Каталог мопедов</a></li>
-          <li><a href="#">Как арендовать</a></li>
-          <li><a href="#">Тарифы</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="nav-item"><a href="#main-catalog">Каталог мопедов</a></li>
+          <li class="nav-item"><a href="#main-how">Как арендовать</a></li>
+          <li class="nav-item"><a href="#main-price">Тарифы</a></li>
+          <li class="nav-item"><a href="#footer-social">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -103,7 +103,7 @@
         </p>
       </section>
 
-      <section class="main-catalog">
+      <section class="main-catalog" id="main-catalog">
         <h2>Каталог мопедов</h2>
       </section>
 
@@ -120,7 +120,7 @@
         </p>
       </section>
 
-      <section class="main-how">
+      <section class="main-how" id="main-how">
         <h2>КАК АРЕНДОВАТЬ?</h2>
         <ul type="none">
           <li>Нажимаете на сайте кнопку "Арендовать" или звоните нам</li>
@@ -132,7 +132,7 @@
         <p>В комплект входит шлем и дождевик</p>
       </section>
 
-      <section class="main-price">
+      <section class="main-price" id="main-price">
         <h2>тарифы на аренду мопеда</h2>
         <div>
           <article>
@@ -214,7 +214,7 @@
           Не пропусти самое интересное!<br />
           До скорой встречи =)
         </p>
-        <div class="footer-social">
+        <div class="footer-social" id="footer-social">
           <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           <a href="#"
             ><i class="fa fa-facebook-square" aria-hidden="true"></i
@@ -236,6 +236,15 @@
           this.classList.toggle('opened')
           document.querySelector('.nav').classList.toggle('opened')
         })
+    </script>
+
+    <script>
+      document.querySelectorAll('.nav-item').forEach((element) => {
+        element.addEventListener('click', function () {
+          document.querySelector('.header-burger').classList.remove('opened')
+          document.querySelector('.nav').classList.remove('opened')
+        })
+      })
     </script>
 
     <script>
