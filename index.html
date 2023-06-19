@@ -239,37 +239,41 @@
     </script>
 
     <script>
-      let position = 0
-      let count = 1
+      let index = 0
+      let steps = []
       let gallery = carousel.querySelector('.gallery')
       let list = carousel.querySelector('.gallery-list')
       let listElem = carousel.querySelector('.gallery-element')
       let listElems = carousel.querySelectorAll('.gallery-element')
 
+      console.log(getSteps())
       carousel.querySelector('.prev').onclick = function () {
-        const [offset, maxPosition] = getData()
-        position += offset
-        position = Math.min(position, 0)
-        list.style.marginLeft = position + 'px'
+        steps = getSteps()
+        index = Math.max(index - 1, 0)
+        list.style.marginLeft = steps[index] + 'px'
       }
 
       carousel.querySelector('.next').onclick = function () {
-        const [offset, maxPosition] = getData()
-        position -= offset
-        position = Math.max(position, maxPosition)
-        list.style.marginLeft = position + 'px'
+        steps = getSteps()
+        index = Math.min(index + 1, steps.length - 1)
+        list.style.marginLeft = steps[index] + 'px'
       }
 
-      function getData() {
-        const width = listElem.offsetWidth
-        const maxPosition = gallery.offsetWidth - width * listElems.length
-        const elementMargins = (gallery.offsetWidth - width) / 2
-        const offset =
-          width * count === elementMargins
-            ? width * count
-            : width * count - elementMargins
+      function getSteps() {
+        let elementWidth = listElem.offsetWidth
+        let maxOffset = gallery.offsetWidth - elementWidth * listElems.length
+        let elementMargins = (gallery.offsetWidth - elementWidth) / 2
+        let step =
+          elementWidth !== elementMargins ? elementMargins : elementWidth / 2
+        let steps = [0]
 
-        return [offset, maxPosition]
+        listElems.forEach(() => {
+          step -= elementWidth
+          if (step < maxOffset) return
+          steps.push(step)
+        })
+        steps.push(maxOffset)
+        return steps
       }
     </script>
   </body>
