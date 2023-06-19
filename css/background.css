@@ -63,6 +63,15 @@ footer,
   color: transparent;
 }
 
+.header-burger span {
+  background-color: white;
+}
+
+.header-burger::after,
+.header-burger::before {
+  background-color: white;
+}
+
 nav ul {
   background-color: white;
 }
