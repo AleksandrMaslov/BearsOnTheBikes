@@ -180,6 +180,17 @@ footer a {
   text-decoration: underline;
 }
 
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.fa-vk {
+  padding: 0.1em;
+  border: 3px white solid;
+  border-radius: 10px;
+}
+
 .main-reason li::before,
 .main-how li::before {
   content: 'X';
@@ -324,10 +335,6 @@ footer a {
   footer section {
     width: 33%;
     margin-right: 150px;
-  }
-
-  .footer-social a {
-    margin-right: 20px;
   }
 
   .footer-last {

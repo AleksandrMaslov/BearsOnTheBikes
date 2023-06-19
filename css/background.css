@@ -1,3 +1,18 @@
+header,
+footer,
+.main-rent,
+.main-reason,
+.main-how,
+.main-price,
+.main-carousel {
+  background-color: #111111;
+}
+
+.main-location,
+.main-security {
+  background-color: #ffffff;
+}
+
 .logo-text {
   background: -webkit-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
   background: -moz-linear-gradient(180deg, #abc2e8, #f2bcb9, #f5a366);
@@ -12,21 +27,6 @@
   background: -ms-linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
   background: -o-linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
   background: linear-gradient(0deg, #abc2e8, #f2bcb9, #f5a366);
-}
-
-header,
-footer,
-.main-rent,
-.main-reason,
-.main-how,
-.main-price,
-.main-carousel {
-  background-color: #111111;
-}
-
-.main-location,
-.main-security {
-  background-color: #ffffff;
 }
 
 .main-catalog {

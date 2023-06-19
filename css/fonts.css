@@ -48,6 +48,14 @@ h3 {
   color: black;
 }
 
+.footer-social {
+  font-size: 35px;
+}
+
+i.fa-vk {
+  font-size: 22px;
+}
+
 @media (min-width: 1440px) {
   h1 {
     font-size: 80px;
