@@ -40,8 +40,10 @@
     <header>
       <div class="header-container">
         <section class="header-logo">
-          <img class="logo" src="img/logo.svg" alt="Logo" />
-          <span class="logo-text">Meдведи на мопеде</span>
+          <a href="#">
+            <img class="logo" src="img/logo.svg" alt="Logo" />
+            <span class="logo-text">Meдведи на мопеде</span>
+          </a>
         </section>
 
         <section class="header-contacts">
@@ -49,14 +51,18 @@
           <h3>8 495 922-92-87</h3>
           <button class="header-contacts-btn">Вам позвонить?</button>
         </section>
+
+        <div class="header-burger">
+          <span class="burger-item"></span>
+        </div>
       </div>
 
-      <nav>
+      <nav class="nav">
         <ul type="none">
-          <li><a href="index.html">Каталог мопедов</a></li>
-          <li><a href="index.html">Как арендовать</a></li>
-          <li><a href="index.html">Тарифы</a></li>
-          <li><a href="index.html">Контакты</a></li>
+          <li><a href="#">Каталог мопедов</a></li>
+          <li><a href="#">Как арендовать</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -185,20 +191,27 @@
           До скорой встречи =)
         </p>
         <div class="footer-social">
-          <a href="index.html"
-            ><i class="fa fa-instagram" aria-hidden="true"></i
-          ></a>
-          <a href="index.html"
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"
             ><i class="fa fa-facebook-square" aria-hidden="true"></i
           ></a>
-          <a href="index.html"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
         </div>
       </section>
       <section class="footer-last">
         <h3>8 495 922-92-87</h3>
-        <a href="index.html">Политика конфиденциальности</a>
+        <a href="#">Политика конфиденциальности</a>
         <p>Медведи на мопеде 2023</p>
       </section>
     </footer>
+
+    <script>
+      document
+        .querySelector('.header-burger')
+        .addEventListener('click', function () {
+          // this.classList.toggle('opened')
+          document.querySelector('.nav').classList.toggle('opened')
+        })
+    </script>
   </body>
 </html>

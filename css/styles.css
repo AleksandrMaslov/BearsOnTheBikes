@@ -21,13 +21,13 @@ button:hover {
   justify-content: space-between;
 }
 
-.header-logo {
+.header-logo a {
   display: flex;
+  gap: 15px;
   align-items: center;
 }
 
 .logo {
-  margin-right: 15px;
   width: 40px;
 }
 
@@ -43,14 +43,60 @@ button:hover {
   height: 50px;
 }
 
-nav {
-  width: 50%;
-  display: none;
+.header-burger {
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 19px;
+  width: 30px;
+  display: flex;
 }
 
-nav ul {
+.header-burger span {
+  position: absolute;
+  height: 3px;
+  width: 80%;
+  border-radius: 1.5px;
+  background-color: white;
+}
+
+.header-burger::after,
+.header-burger::before {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 100%;
+  border-radius: 1.5px;
+  background-color: white;
+}
+
+.header-burger::before {
+  top: 0;
+}
+
+.header-burger::after {
+  bottom: 0;
+}
+
+.nav {
+  display: none;
+  position: relative;
+}
+
+.opened {
   display: flex;
+}
+
+.nav ul {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  top: 0px;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  padding: 5px;
+  width: 100%;
 }
 
 .main-rent {
@@ -204,9 +250,16 @@ footer a {
     width: 720px;
   }
 
-  nav {
+  .header-burger {
+    display: none;
+  }
+
+  .nav {
     display: inherit;
-    width: auto;
+  }
+
+  .nav ul {
+    flex-direction: row;
     padding: 0 20px;
   }
 
@@ -230,8 +283,11 @@ footer a {
     padding: 30px 45px;
   }
 
+  .header-logo a {
+    gap: 20px;
+  }
+
   .logo {
-    margin-right: 20px;
     width: 50px;
   }
 
@@ -239,9 +295,18 @@ footer a {
     display: inherit;
   }
 
-  nav {
-    padding: 0 45px;
+  .header-burger {
+    display: none;
+  }
+
+  .nav {
     display: inherit;
+    width: 50%;
+    padding: 0 45px;
+  }
+
+  .nav ul {
+    flex-direction: row;
   }
 
   .main-rent {

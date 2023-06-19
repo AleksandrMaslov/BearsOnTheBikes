@@ -33,6 +33,10 @@ h3 {
   line-height: 30px;
 }
 
+nav {
+  color: black;
+}
+
 .logo-text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -56,6 +60,12 @@ i.fa-vk {
   font-size: 22px;
 }
 
+@media (min-width: 768px) and (max-width: 1439px) {
+  nav {
+    color: white !important;
+  }
+}
+
 @media (min-width: 1440px) {
   h1 {
     font-size: 80px;
@@ -70,6 +80,10 @@ i.fa-vk {
   h3 {
     font-size: 27px;
     line-height: 30px;
+  }
+
+  nav {
+    color: white !important;
   }
 
   .logo-text {
