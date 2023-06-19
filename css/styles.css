@@ -301,6 +301,7 @@ footer a {
 
   .nav ul {
     flex-direction: row;
+    gap: 0px;
     padding: 0 20px;
   }
 
@@ -348,6 +349,7 @@ footer a {
 
   .nav ul {
     flex-direction: row;
+    gap: 0px;
   }
 
   .main-rent {
