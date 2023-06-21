@@ -113,6 +113,18 @@
   transform: translate(0, -50%) rotate(180deg);
 }
 
+@media (min-width: 768px) and (max-width: 1439px) {
+  .main-carousel #slide2:checked ~ .slides .inner {
+    margin-left: calc(var(--photo-width) * -1);
+  }
+  .main-carousel #slide3:checked ~ .slides .inner {
+    margin-left: calc(var(--photo-width) * -2);
+  }
+  .main-carousel #slide4:checked ~ .slides .inner {
+    margin-left: calc(var(--photo-width) * -3);
+  }
+}
+
 @media (min-width: 1440px) {
   .main-carousel {
     --photo-width: var(--photo-width-lg);
