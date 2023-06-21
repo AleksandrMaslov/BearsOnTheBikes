@@ -159,25 +159,45 @@
       </section>
 
       <section class="main-carousel">
-        <div id="carousel" class="carousel">
-          <button class="arrow prev">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-          </button>
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <input type="radio" name="slider" id="slide5" />
+        <input type="radio" name="slider" id="slide6" />
 
-          <div class="gallery">
-            <ul class="gallery-list">
-              <li class="gallery-element"><img src="img/bike04.jpg" /></li>
-              <li class="gallery-element"><img src="img/bike05.jpg" /></li>
-              <li class="gallery-element"><img src="img/bike06.jpg" /></li>
-              <li class="gallery-element"><img src="img/bike04.jpg" /></li>
-              <li class="gallery-element"><img src="img/bike05.jpg" /></li>
-              <li class="gallery-element"><img src="img/bike06.jpg" /></li>
-            </ul>
+        <div class="controls">
+          <label for="slide1"
+            ><i class="fa fa-angle-right" aria-hidden="true"></i
+          ></label>
+          <label for="slide2"
+            ><i class="fa fa-angle-right" aria-hidden="true"></i
+          ></label>
+          <label for="slide3"
+            ><i class="fa fa-angle-right" aria-hidden="true"></i
+          ></label>
+          <label for="slide4"
+            ><i class="fa fa-angle-right" aria-hidden="true"></i
+          ></label>
+          <label for="slide5"
+            ><i class="fa fa-angle-right" aria-hidden="true"></i
+          ></label>
+          <label for="slide6"
+            ><i class="fa fa-angle-right" aria-hidden="true"></i
+          ></label>
+        </div>
+
+        <div class="slides">
+          <div class="overflow">
+            <div class="inner">
+              <div class="slide slide_1"><img src="img/bike04.jpg" /></div>
+              <div class="slide slide_2"><img src="img/bike05.jpg" /></div>
+              <div class="slide slide_3"><img src="img/bike06.jpg" /></div>
+              <div class="slide slide_4"><img src="img/bike04.jpg" /></div>
+              <div class="slide slide_5"><img src="img/bike05.jpg" /></div>
+              <div class="slide slide_6"><img src="img/bike06.jpg" /></div>
+            </div>
           </div>
-
-          <button class="arrow next">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </button>
         </div>
       </section>
 
@@ -245,44 +265,6 @@
           document.querySelector('.nav').classList.remove('opened')
         })
       })
-    </script>
-
-    <script>
-      let index = 0
-      let steps = []
-      let gallery = carousel.querySelector('.gallery')
-      let list = carousel.querySelector('.gallery-list')
-      let listElem = carousel.querySelector('.gallery-element')
-      let listElems = carousel.querySelectorAll('.gallery-element')
-
-      carousel.querySelector('.prev').onclick = function () {
-        steps = getSteps()
-        index = Math.max(index - 1, 0)
-        list.style.marginLeft = steps[index] + 'px'
-      }
-
-      carousel.querySelector('.next').onclick = function () {
-        steps = getSteps()
-        index = Math.min(index + 1, steps.length - 1)
-        list.style.marginLeft = steps[index] + 'px'
-      }
-
-      function getSteps() {
-        let elementWidth = listElem.offsetWidth
-        let maxOffset = gallery.offsetWidth - elementWidth * listElems.length
-        let elementMargins = (gallery.offsetWidth - elementWidth) / 2
-        let step =
-          elementWidth !== elementMargins ? elementMargins : elementWidth / 2
-        let steps = [0]
-
-        listElems.forEach(() => {
-          step -= elementWidth
-          if (step < maxOffset) return
-          steps.push(step)
-        })
-        steps.push(maxOffset)
-        return steps
-      }
     </script>
   </body>
 </html>

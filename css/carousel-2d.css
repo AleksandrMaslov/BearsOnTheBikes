@@ -1,85 +1,132 @@
-.carousel {
+.main-carousel {
+  --photo-width-s: 384px;
+  --photo-width-lg: 480px;
+  --photo-width: var(--photo-width-s);
+
+  --controls-size: 35px;
+  --controls-margin: 20px;
+}
+
+.main-carousel input[type='radio'] {
+  display: none;
+}
+
+.main-carousel label {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-carousel .slides {
   position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+.main-carousel .overflow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-carousel .slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: calc(var(--photo-width) * 6);
+  height: 100%;
+}
+
+.main-carousel .slides .slide {
+  height: 100%;
+  width: 16.6666%;
+  float: left;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
 }
 
-.arrow {
+.main-carousel .controls {
   z-index: 5;
-  position: absolute;
-  transform: translate(0, -50%);
+  position: relative;
   top: 50%;
-  border: none;
-  width: 35px;
-  height: 35px;
+}
+
+.main-carousel .controls label {
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--controls-size);
+  height: var(--controls-size);
+
   border: none;
   border-radius: 50%;
-  background-color: rgba(152, 149, 149, 0.2);
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.5;
+
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
 }
 
-.arrow:hover {
-  cursor: pointer;
-  background-color: rgba(152, 149, 149, 0.6);
+.main-carousel .controls label:hover {
+  opacity: 1;
 }
 
-.prev {
-  left: 20px;
+.main-carousel #slide1:checked ~ .slides .inner {
+  margin-left: 0;
+}
+.main-carousel #slide2:checked ~ .slides .inner {
+  margin-left: calc(var(--photo-width) * -0.96);
+}
+.main-carousel #slide3:checked ~ .slides .inner {
+  margin-left: calc(var(--photo-width) * -1.96);
+}
+.main-carousel #slide4:checked ~ .slides .inner {
+  margin-left: calc(var(--photo-width) * -2.96);
 }
 
-.next {
-  right: 20px;
+.main-carousel #slide1:checked ~ .controls label:nth-child(2),
+.main-carousel #slide2:checked ~ .controls label:nth-child(3),
+.main-carousel #slide3:checked ~ .controls label:nth-child(4),
+.main-carousel #slide4:checked ~ .controls label:nth-child(1) {
+  float: right;
+  margin: 0 var(--controls-margin);
+  display: flex;
 }
 
-.gallery {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.gallery ul {
-  height: 100%;
-  width: 9999px;
-  list-style: none;
-  transition: margin-left 500ms;
-  font-size: 0;
-}
-
-.gallery li {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  width: 384px;
-  height: 100%;
-}
-
-.gallery li > img {
-  z-index: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+.main-carousel #slide1:checked ~ .controls label:nth-child(4),
+.main-carousel #slide2:checked ~ .controls label:nth-child(1),
+.main-carousel #slide3:checked ~ .controls label:nth-child(2),
+.main-carousel #slide4:checked ~ .controls label:nth-child(3) {
+  float: left;
+  margin: 0 var(--controls-margin);
+  display: flex;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media (min-width: 1440px) {
-  .arrow {
-    width: 60px;
-    height: 60px;
+  .main-carousel {
+    --photo-width: var(--photo-width-lg);
+    --controls-size: 60px;
+    --controls-margin: 45px;
   }
 
-  .prev {
-    left: 45px;
+  .main-carousel #slide2:checked ~ .slides .inner {
+    margin-left: calc(var(--photo-width) * -1);
   }
-
-  .next {
-    right: 45px;
+  .main-carousel #slide3:checked ~ .slides .inner {
+    margin-left: calc(var(--photo-width) * -2);
   }
-
-  .gallery li {
-    width: 480px;
+  .main-carousel #slide4:checked ~ .slides .inner {
+    margin-left: calc(var(--photo-width) * -3);
   }
 }

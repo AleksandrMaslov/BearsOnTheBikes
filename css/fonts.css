@@ -52,8 +52,10 @@ nav {
   color: black;
 }
 
-.arrow {
-  font-size: 17px;
+.main-carousel .controls {
+  font-family: 'FontAwesome';
+  font-weight: 100;
+  font-size: 34px;
 }
 
 .footer-social {
@@ -94,7 +96,7 @@ i.fa-vk {
     font-size: 22px;
   }
 
-  .arrow {
-    font-size: 30px;
+  .main-carousel .controls {
+    font-size: 50px;
   }
 }

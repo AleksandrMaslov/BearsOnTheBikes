@@ -37,10 +37,18 @@ body {
   background: linear-gradient(90deg, #abc2e8, #f2bcb9, #f5a366);
 }
 
+.main-carousel .controls i {
+  background: -webkit-linear-gradient(90deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -moz-linear-gradient(90deg, #abc2e8, #f2bcb9, #f5a366);
+  background: -o-linear-gradient(90deg, #abc2e8, #f2bcb9, #f5a366);
+  background: linear-gradient(90deg, #abc2e8, #f2bcb9, #f5a366);
+}
+
 .logo-text,
 .main-price h3,
 .main-reason li::before,
-.main-how li::before {
+.main-how li::before,
+.main-carousel .controls i {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -ms-background-clip: text;
