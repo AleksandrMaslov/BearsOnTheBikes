@@ -3,8 +3,13 @@
   --photo-width-lg: 480px;
   --photo-width: var(--photo-width-s);
 
-  --controls-size: 35px;
-  --controls-margin: 20px;
+  --controls-size-s: 35px;
+  --controls-size-lg: 60px;
+  --controls-size: var(--controls-size-s);
+
+  --controls-margin-s: 20px;
+  --controls-margin-lg: 45px;
+  --controls-margin: var(--controls-margin-s);
 }
 
 .main-carousel input[type='radio'] {
@@ -128,8 +133,8 @@
 @media (min-width: 1440px) {
   .main-carousel {
     --photo-width: var(--photo-width-lg);
-    --controls-size: 60px;
-    --controls-margin: 45px;
+    --controls-size: var(--controls-size-lg);
+    --controls-margin: var(--controls-margin-lg);
   }
 
   .main-carousel #slide2:checked ~ .slides .inner {
