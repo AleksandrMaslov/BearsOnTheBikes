@@ -5,11 +5,11 @@
   --slide-radius: 22px;
   --slide-radius-desktop: 30px;
   --slide-p: 30px;
-  --slide-p-desktop: 50px;
-  --slide-spacingy: 20px;
-  --slide-spacingy-desktop: 30px;
-  --img-size: 240px;
-  --img-size-desktop: 330px;
+  --slide-p-desktop: 40px;
+  --slide-spacingy: 15px;
+  --slide-spacingy-desktop: 20px;
+  --img-size: 170px;
+  --img-size-desktop: 240px;
 
   --slide-width: calc(var(--slide-p) * 2 + var(--img-size));
   --slide-half-width: calc(var(--slide-width) / 2);
@@ -18,50 +18,59 @@
   --slide-gap: 20px;
   --slide-gap-desktop: 30px;
 
+  --slide-btn-width: 170px;
+  --slide-btn-width-desktop: 235px;
+  --slide-btn-height: 32px;
+  --slide-btn-height-desktop: 45px;
+
   --bullets-my: 110px;
   --bullets-my-desktop: 160px;
   --bullet-size: 10px;
   --bullets-gap: 10px;
   --bullet-size-desktop: 15px;
-}
 
-.main-catalog h2 {
-  margin-bottom: var(--bullets-my);
+  --transition: 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .main-catalog input[type='radio'] {
   display: none;
 }
 
-.main-catalog label,
+.main-catalog label {
+  cursor: pointer;
+}
+
 .main-catalog button {
   cursor: pointer;
+  width: var(--slide-btn-width);
+  height: var(--slide-btn-height);
 }
 
 .main-catalog .catalog-overflow {
   position: relative;
-  margin-bottom: var(--bullets-my);
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  padding: var(--bullets-my) 0;
 }
 
 .main-catalog .catalog-inner {
   position: relative;
-  left: 0;
   --first-position: calc(50% - var(--slide-half-width));
+  --offset: 0;
+  left: calc(var(--first-position) - var(--offset));
 
   height: 100%;
   display: flex;
-  gap: var(--slide-gap);
   align-items: center;
   justify-content: center;
+  gap: var(--slide-gap);
 
   --slides-width: calc(var(--slide-width) * var(--slides-number));
   --slides-gaps-width: calc(var(--slide-gap) * (var(--slides-number) - 1));
   width: calc(var(--slides-width) + var(--slides-gaps-width));
 
-  --innter-transition: left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  --innter-transition: left var(--transition);
   -webkit-transition: var(--innter-transition);
   -moz-transition: var(--innter-transition);
   -o-transition: var(--innter-transition);
@@ -69,34 +78,43 @@
 }
 
 .main-catalog .catalog-inner .slide {
+  position: relative;
   float: left;
   display: block;
+  opacity: 0.5;
+  filter: saturate(50%);
   padding: var(--slide-p);
   border-radius: var(--slide-radius);
   background-color: var(--slide-bg-color);
-  filter: saturate(50%);
-  opacity: 0.5;
 
-  --bullet-filter-transition: filter 0.2s ease-out;
+  --bullet-filter-transition: filter var(--transition);
   -webkit-transition: var(--bullet-filter-transition);
   -moz-transition: var(--bullet-filter-transition);
   -o-transition: var(--bullet-filter-transition);
   transition: var(--bullet-filter-transition);
 
-  --bullet-opacity-transition: opacity 0.2s ease-out;
+  --bullet-opacity-transition: opacity var(--transition);
   -webkit-transition: var(--bullet-opacity-transition);
   -moz-transition: var(--bullet-opacity-transition);
   -o-transition: var(--bullet-opacity-transition);
   transition: var(--bullet-opacity-transition);
+
+  --slide-scale-transition: transform var(--transition);
+  -webkit-transition: var(--slide-scale-transition);
+  -moz-transition: var(--slide-scale-transition);
+  -o-transition: var(--slide-scale-transition);
+  transition: var(--slide-scale-transition);
+
+  --slide-transform: scale(1);
+  -webkit-transform: var(--slide-transform);
+  -moz-transform: var(--slide-transform);
+  -o-transform: var(--slide-transform);
+  transform: var(--slide-transform);
 }
 
 .main-catalog .catalog-inner .slide:hover {
   filter: saturate(90%);
   opacity: 0.7;
-}
-
-.main-catalog .catalog-inner .slide:hover > button {
-  background-color: var(--button-bg);
 }
 
 .main-catalog .catalog-inner h5 {
@@ -106,8 +124,8 @@
 
 .main-catalog .catalog-inner img {
   margin-bottom: var(--slide-spacingy);
-  display: block;
   width: var(--img-size);
+  display: block;
   height: 100%;
 }
 
@@ -135,65 +153,61 @@
 }
 
 .main-catalog #slide_1:checked ~ .catalog-overflow .catalog-inner {
-  left: var(--first-position);
+  --offset: calc(0 * var(--slide-gap-width));
 }
 .main-catalog #slide_2:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(1 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 .main-catalog #slide_3:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(2 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 .main-catalog #slide_4:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(3 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 .main-catalog #slide_5:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(4 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 .main-catalog #slide_6:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(5 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 .main-catalog #slide_7:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(6 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 .main-catalog #slide_8:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(7 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 .main-catalog #slide_9:checked ~ .catalog-overflow .catalog-inner {
   --offset: calc(8 * var(--slide-gap-width));
-  left: calc(var(--first-position) - var(--offset));
 }
 
-.main-catalog #slide_1:checked ~ .catalog-bullets label:nth-child(1) {
-  background-color: var(--bullet-color);
+.main-catalog #slide_1:checked ~ .catalog-overflow .slide:nth-child(1),
+.main-catalog #slide_2:checked ~ .catalog-overflow .slide:nth-child(2),
+.main-catalog #slide_3:checked ~ .catalog-overflow .slide:nth-child(3),
+.main-catalog #slide_4:checked ~ .catalog-overflow .slide:nth-child(4),
+.main-catalog #slide_5:checked ~ .catalog-overflow .slide:nth-child(5),
+.main-catalog #slide_6:checked ~ .catalog-overflow .slide:nth-child(6),
+.main-catalog #slide_7:checked ~ .catalog-overflow .slide:nth-child(7),
+.main-catalog #slide_8:checked ~ .catalog-overflow .slide:nth-child(8),
+.main-catalog #slide_9:checked ~ .catalog-overflow .slide:nth-child(9) {
+  z-index: 5;
+  opacity: 1;
+  filter: saturate(100%);
+
+  --slide-checked-transform: scale(1.4);
+  -webkit-transform: var(--slide-checked-transform);
+  -moz-transform: var(--slide-checked-transform);
+  -o-transform: var(--slide-checked-transform);
+  transform: var(--slide-checked-transform);
 }
-.main-catalog #slide_2:checked ~ .catalog-bullets label:nth-child(2) {
-  background-color: var(--bullet-color);
-}
-.main-catalog #slide_3:checked ~ .catalog-bullets label:nth-child(3) {
-  background-color: var(--bullet-color);
-}
-.main-catalog #slide_4:checked ~ .catalog-bullets label:nth-child(4) {
-  background-color: var(--bullet-color);
-}
-.main-catalog #slide_5:checked ~ .catalog-bullets label:nth-child(5) {
-  background-color: var(--bullet-color);
-}
-.main-catalog #slide_6:checked ~ .catalog-bullets label:nth-child(6) {
-  background-color: var(--bullet-color);
-}
-.main-catalog #slide_7:checked ~ .catalog-bullets label:nth-child(7) {
-  background-color: var(--bullet-color);
-}
-.main-catalog #slide_8:checked ~ .catalog-bullets label:nth-child(8) {
-  background-color: var(--bullet-color);
-}
+
+.main-catalog #slide_1:checked ~ .catalog-bullets label:nth-child(1),
+.main-catalog #slide_2:checked ~ .catalog-bullets label:nth-child(2),
+.main-catalog #slide_3:checked ~ .catalog-bullets label:nth-child(3),
+.main-catalog #slide_4:checked ~ .catalog-bullets label:nth-child(4),
+.main-catalog #slide_5:checked ~ .catalog-bullets label:nth-child(5),
+.main-catalog #slide_6:checked ~ .catalog-bullets label:nth-child(6),
+.main-catalog #slide_7:checked ~ .catalog-bullets label:nth-child(7),
+.main-catalog #slide_8:checked ~ .catalog-bullets label:nth-child(8),
 .main-catalog #slide_9:checked ~ .catalog-bullets label:nth-child(9) {
   background-color: var(--bullet-color);
 }
@@ -237,6 +251,10 @@
     --slide-gap: var(--slide-gap-desktop);
 
     --img-size: var(--img-size-desktop);
+
+    --slide-btn-width: var(--slide-btn-width-desktop);
+    --slide-btn-height: var(--slide-btn-height-desktop);
+
     --bullets-my: var(--bullets-my-desktop);
     --bullet-size: var(--bullet-size-desktop);
   }

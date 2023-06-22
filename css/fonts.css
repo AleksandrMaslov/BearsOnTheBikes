@@ -43,10 +43,10 @@
   --line-h4: 30px;
   --line-h4-desktop: 30px;
 
-  --font-size-h5: 13px;
-  --font-size-h5-desktop: 18px;
-  --line-h5: 16.3px;
-  --line-h5-desktop: 22.5px;
+  --font-size-h5: 10px;
+  --font-size-h5-desktop: 14px;
+  --line-h5: 13px;
+  --line-h5-desktop: 17.5px;
 }
 
 body,
