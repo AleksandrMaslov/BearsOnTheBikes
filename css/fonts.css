@@ -42,6 +42,11 @@
   --font-size-h4-desktop: 27px;
   --line-h4: 30px;
   --line-h4-desktop: 30px;
+
+  --font-size-h5: 13px;
+  --font-size-h5-desktop: 18px;
+  --line-h5: 16.3px;
+  --line-h5-desktop: 22.5px;
 }
 
 body,
@@ -72,6 +77,12 @@ h3 {
 }
 
 h4 {
+  font-family: var(--font-common);
+  font-size: var(--font-size-h4);
+  line-height: var(--line-h4);
+}
+
+h5 {
   font-family: var(--font-common);
   font-size: var(--font-size-h4);
   line-height: var(--line-h4);
@@ -126,6 +137,9 @@ i.fa-vk {
 
     --font-size-h4: var(--font-size-h4-desktop);
     --line-h4: var(--line-h4-desktop);
+
+    --font-size-h5: var(--font-size-h5-desktop);
+    --line-h5: var(--line-h5-desktop);
 
     --font-size-logo: var(--font-size-logo-desktop);
   }
