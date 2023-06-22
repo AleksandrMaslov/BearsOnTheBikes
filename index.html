@@ -108,29 +108,66 @@
         <div class="catalog-slider">
           <input type="radio" name="catalog" id="slide_1" />
           <input type="radio" name="catalog" id="slide_2" />
-          <input type="radio" name="catalog" id="slide_3" checked />
+          <input type="radio" name="catalog" id="slide_3" />
           <input type="radio" name="catalog" id="slide_4" />
-          <input type="radio" name="catalog" id="slide_5" />
+          <input type="radio" name="catalog" id="slide_5" checked />
+          <input type="radio" name="catalog" id="slide_6" />
+          <input type="radio" name="catalog" id="slide_7" />
+          <input type="radio" name="catalog" id="slide_8" />
+          <input type="radio" name="catalog" id="slide_9" />
 
           <div class="catalog-overflow">
             <div class="catalog-inner">
-              <div class="cards">
-                <label for="slide_1" class="slide1"
-                  ><img src="img/bike-blue.jpg" alt="bike-blue"
-                /></label>
-                <label for="slide_2" class="slide2"
-                  ><img src="img/bike-green.jpg" alt="bike-green"
-                /></label>
-                <label for="slide_3" class="slide3"
-                  ><img src="img/bike-milk.jpg" alt="bike-milk"
-                /></label>
-                <label for="slide_4" class="slide4"
-                  ><img src="img/bike-red.jpg" alt="bike-red"
-                /></label>
-                <label for="slide_5" class="slide5"
-                  ><img src="img/bike-yellow.jpg" alt="bike-yellow"
-                /></label>
-              </div>
+              <label for="slide_1" class="slide">
+                <h5>Honda Giorno Blue</h5>
+                <img src="img/bike-blue.jpg" alt="bike-blue" />
+                <button>Арендовать</button>
+              </label>
+              <label for="slide_2" class="slide">
+                <h5>Honda Giorno Green</h5>
+                <img src="img/bike-green.jpg" alt="bike-green" />
+                <button>Арендовать</button>
+              </label>
+              <label for="slide_3" class="slide">
+                <h5>Honda Giorno Milk</h5>
+                <img src="img/bike-milk.jpg" alt="bike-milk" />
+                <button>Арендовать</button>
+              </label>
+              <label for="slide_4" class="slide">
+                <h5>Honda Giorno Red</h5>
+                <img src="img/bike-red.jpg" alt="bike-red" />
+                <button>Арендовать</button></label
+              >
+              <label for="slide_5" class="slide">
+                <h5>Honda Giorno Yellow</h5>
+                <img src="img/bike-yellow.jpg" alt="bike-yellow" /><button>
+                  Арендовать
+                </button></label
+              >
+              <label for="slide_6" class="slide">
+                <h5>Honda Giorno Green</h5>
+                <img src="img/bike-green.jpg" alt="bike-green" /><button>
+                  Арендовать
+                </button></label
+              >
+              <label for="slide_7" class="slide">
+                <h5>Honda Giorno Milk</h5>
+                <img src="img/bike-milk.jpg" alt="bike-milk" /><button>
+                  Арендовать
+                </button></label
+              >
+              <label for="slide_8" class="slide">
+                <h5>Honda Giorno Red</h5>
+                <img src="img/bike-red.jpg" alt="bike-red" /><button>
+                  Арендовать
+                </button></label
+              >
+              <label for="slide_9" class="slide">
+                <h5>Honda Giorno Blue</h5>
+                <img src="img/bike-blue.jpg" alt="bike-blue" /><button>
+                  Арендовать
+                </button></label
+              >
             </div>
           </div>
 
@@ -140,6 +177,10 @@
             <label for="slide_3" class="bullet"></label>
             <label for="slide_4" class="bullet"></label>
             <label for="slide_5" class="bullet"></label>
+            <label for="slide_6" class="bullet"></label>
+            <label for="slide_7" class="bullet"></label>
+            <label for="slide_8" class="bullet"></label>
+            <label for="slide_9" class="bullet"></label>
           </div>
         </div>
       </section>
@@ -297,9 +338,7 @@
           this.classList.toggle('opened')
           document.querySelector('.nav').classList.toggle('opened')
         })
-    </script>
 
-    <script>
       document.querySelectorAll('.nav-item').forEach((element) => {
         element.addEventListener('click', function () {
           document.querySelector('.header-burger').classList.remove('opened')
