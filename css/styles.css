@@ -265,7 +265,7 @@ footer {
     --spacingy-common: var(--spacingy-common-desktop);
     --spacingy: var(--spacingy-desktop);
     --price-spacingx: var(--price-spacingx-desktop);
-    --li-spacingy: var(var(--li-spacingy-desktop));
+    --li-spacingy: var(--li-spacingy-desktop);
 
     --header-m-bottom: var(--header-m-bottom-desktop);
 
