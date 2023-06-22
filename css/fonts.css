@@ -84,8 +84,8 @@ h4 {
 
 h5 {
   font-family: var(--font-common);
-  font-size: var(--font-size-h4);
-  line-height: var(--line-h4);
+  font-size: var(--font-size-h5);
+  line-height: var(--line-h5);
 }
 
 nav {
