@@ -86,6 +86,7 @@
   padding: var(--slide-p);
   border-radius: var(--slide-radius);
   background-color: var(--slide-bg-color);
+  box-shadow: 0 3px 35px 20px rgba(0, 0, 1, 0.1);
 
   --bullet-filter-transition: filter var(--transition);
   -webkit-transition: var(--bullet-filter-transition);
