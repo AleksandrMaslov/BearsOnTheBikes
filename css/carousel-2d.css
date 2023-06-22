@@ -36,9 +36,14 @@
 }
 
 .main-carousel .slides .inner {
-  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
   width: calc(var(--photo-width) * 6);
   height: 100%;
+
+  --innter-transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: var(--innter-transition);
+  -moz-transition: var(--innter-transition);
+  -o-transition: var(--innter-transition);
+  transition: var(--innter-transition);
 }
 
 .main-carousel .slides .slide {
@@ -61,10 +66,11 @@
 }
 
 .main-carousel .controls label {
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  --controls-transform: translate(0, -50%);
+  -webkit-transform: var(--controls-transform);
+  -moz-transform: var(--controls-transform) s;
+  -o-transform: var(--controls-transform) s;
+  transform: var(--controls-transform) s;
 
   display: none;
   align-items: center;
@@ -77,10 +83,11 @@
   background-color: rgba(255, 255, 255, 0.3);
   opacity: 0.5;
 
-  -webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
-  -o-transition: opacity 0.2s ease-out;
-  transition: opacity 0.2s ease-out;
+  --controls-transition: opacity 0.2s ease-out;
+  -webkit-transition: var(--controls-transition);
+  -moz-transition: var(--controls-transition);
+  -o-transition: var(--controls-transition);
+  transition: var(--controls-transition);
 }
 
 .main-carousel .controls label:hover {
