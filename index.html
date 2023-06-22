@@ -42,18 +42,18 @@
   <body>
     <header>
       <div class="header-container">
-        <section class="header-logo">
+        <div class="header-logo">
           <a href="#">
             <img class="logo" src="img/logo.svg" alt="Logo" />
             <span class="logo-text">Meдведи на мопеде</span>
           </a>
-        </section>
+        </div>
 
-        <section class="header-contacts">
+        <div class="header-contacts">
           <p class="adress">Большой Сухаревский пер.17, стр.3</p>
-          <h3 class="adress">8 495 922-92-87</h3>
+          <h4 class="adress">8 495 922-92-87</h4>
           <button class="request-btn">Вам позвонить?</button>
-        </section>
+        </div>
 
         <div class="header-burger">
           <span class="burger-item"></span>
@@ -105,10 +105,47 @@
 
       <section class="main-catalog" id="main-catalog">
         <h2>Каталог мопедов</h2>
+        <div class="catalog-slider">
+          <input type="radio" name="catalog" id="slide_1" />
+          <input type="radio" name="catalog" id="slide_2" />
+          <input type="radio" name="catalog" id="slide_3" checked />
+          <input type="radio" name="catalog" id="slide_4" />
+          <input type="radio" name="catalog" id="slide_5" />
+
+          <div class="catalog-overflow">
+            <div class="catalog-inner">
+              <div class="cards">
+                <label for="slide_1" class="slide1"
+                  ><img src="img/bike-blue.jpg" alt="bike-blue"
+                /></label>
+                <label for="slide_2" class="slide2"
+                  ><img src="img/bike-green.jpg" alt="bike-green"
+                /></label>
+                <label for="slide_3" class="slide3"
+                  ><img src="img/bike-milk.jpg" alt="bike-milk"
+                /></label>
+                <label for="slide_4" class="slide4"
+                  ><img src="img/bike-red.jpg" alt="bike-red"
+                /></label>
+                <label for="slide_5" class="slide5"
+                  ><img src="img/bike-yellow.jpg" alt="bike-yellow"
+                /></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-bullets">
+            <label for="slide_1" class="bullet"></label>
+            <label for="slide_2" class="bullet"></label>
+            <label for="slide_3" class="bullet"></label>
+            <label for="slide_4" class="bullet"></label>
+            <label for="slide_5" class="bullet"></label>
+          </div>
+        </div>
       </section>
 
       <section class="main-security">
-        <h2>Полная уверенность в&nbsp;надежности</h2>
+        <h2>Полная уверенность<br />в&nbsp;надежности</h2>
         <p>
           Каждый мопед, перед тем как Вы возьмёте его в аренду, в обязательном
           порядке проходит осмотр и необходимую подготовку у наших механиков. И
@@ -222,28 +259,32 @@
           style="border: 0"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          id="main-location-map"
+          class="map"
         ></iframe>
       </section>
     </main>
 
     <footer>
       <section><h2>Подписывайся на нас</h2></section>
+
       <section>
-        <p>
-          Не пропусти самое интересное!<br />
-          До скорой встречи =)
-        </p>
-        <div class="footer-social" id="footer-social">
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="#"
-            ><i class="fa fa-facebook-square" aria-hidden="true"></i
-          ></a>
-          <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        <div>
+          <p>
+            Не пропусти самое интересное!<br />
+            До скорой встречи =)
+          </p>
+          <div class="footer-social" id="footer-social">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"
+              ><i class="fa fa-facebook-square" aria-hidden="true"></i
+            ></a>
+            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          </div>
         </div>
       </section>
+
       <section class="footer-last">
-        <h3>8 495 922-92-87</h3>
+        <h4>8 495 922-92-87</h4>
         <a href="#">Политика конфиденциальности</a>
         <p>Медведи на мопеде 2023</p>
       </section>

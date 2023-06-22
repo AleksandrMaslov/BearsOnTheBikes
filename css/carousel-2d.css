@@ -1,18 +1,15 @@
 .main-carousel {
-  --photo-width-s: 384px;
-  --photo-width-lg: 480px;
-  --photo-width: var(--photo-width-s);
+  --photo-width: 384px;
+  --photo-width-desktop: 480px;
 
-  --controls-size-s: 35px;
-  --controls-size-lg: 60px;
-  --controls-size: var(--controls-size-s);
+  --controls-size: 35px;
+  --controls-size-desktop: 60px;
 
-  --controls-margin-s: 20px;
-  --controls-margin-lg: 45px;
-  --controls-margin: var(--controls-margin-s);
+  --controls-margin: 20px;
+  --controls-margin-desktop: 45px;
 
   --controls-font-size-s: 34px;
-  --controls-font-size-lg: 50px;
+  --controls-font-size-desktop: 50px;
 }
 
 .main-carousel input[type='radio'] {
@@ -139,13 +136,13 @@
 
 @media (min-width: 1440px) {
   .main-carousel {
-    --photo-width: var(--photo-width-lg);
-    --controls-size: var(--controls-size-lg);
-    --controls-margin: var(--controls-margin-lg);
+    --photo-width: var(--photo-width-desktop);
+    --controls-size: var(--controls-size-desktop);
+    --controls-margin: var(--controls-margin-desktop);
   }
 
   .main-carousel .controls {
-    font-size: var(--controls-font-size-lg);
+    font-size: var(--controls-font-size-desktop);
   }
 
   .main-carousel #slide2:checked ~ .slides .inner {
