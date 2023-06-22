@@ -8,7 +8,7 @@
   --controls-margin: 20px;
   --controls-margin-desktop: 45px;
 
-  --controls-font-size-s: 34px;
+  --controls-font-size: 34px;
   --controls-font-size-desktop: 50px;
 }
 
@@ -57,7 +57,7 @@
 
   font-family: 'FontAwesome';
   font-weight: 100;
-  font-size: var(--controls-font-size-s);
+  font-size: var(--controls-font-size);
 }
 
 .main-carousel .controls label {
@@ -139,10 +139,7 @@
     --photo-width: var(--photo-width-desktop);
     --controls-size: var(--controls-size-desktop);
     --controls-margin: var(--controls-margin-desktop);
-  }
-
-  .main-carousel .controls {
-    font-size: var(--controls-font-size-desktop);
+    --controls-font-size: var(--controls-font-size-desktop);
   }
 
   .main-carousel #slide2:checked ~ .slides .inner {
