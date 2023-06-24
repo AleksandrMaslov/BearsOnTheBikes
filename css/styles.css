@@ -15,7 +15,7 @@
   --li-spacingy-desktop: 20px;
 
   --price-spacingx: 20px;
-  --price-spacingx-desktop: 35px;
+  --price-spacingx-desktop: 30px;
 
   --header-m-bottom: 25px;
   --header-m-bottom-desktop: 30px;
@@ -138,6 +138,19 @@ header {
 
 .main-how ul {
   margin-bottom: var(--spacingy);
+}
+
+.main-how .logo-grid {
+  display: none;
+  float: right;
+  --cell-size: 85px;
+  gap: 30px;
+  grid-template-columns: var(--cell-size) var(--cell-size) var(--cell-size);
+  grid-template-rows: var(--cell-size) var(--cell-size) var(--cell-size);
+}
+
+.main-how .bike-logo {
+  grid-area: 'logo';
 }
 
 .main-price {
@@ -311,6 +324,10 @@ footer {
   .main-security h2 {
     margin-right: 145px;
     margin-bottom: 0;
+  }
+
+  .main-how .logo-grid {
+    display: grid;
   }
 
   #main-price-third {
