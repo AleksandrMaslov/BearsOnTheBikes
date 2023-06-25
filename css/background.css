@@ -89,6 +89,19 @@ button:hover {
   color: transparent;
 }
 
+.img-frame {
+  --gradient: 120deg, var(--gradient-colors);
+  --frame-gradient: -webkit-linear-gradient(var(--gradient));
+  --frame-gradient: -moz-linear-gradient(var(--gradient));
+  --frame-gradient: -o-linear-gradient(var(--gradient));
+  --frame-gradient: linear-gradient(var(--gradient));
+  --bg-gradient: linear-gradient(var(--bg-color-dark), var(--bg-color-dark));
+
+  background-image: var(--bg-gradient), var(--frame-gradient);
+  background-clip: content-box, border-box;
+  background-origin: border-box;
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
   nav ul {
     background-color: var(--bg-color-dark) !important;
