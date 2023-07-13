@@ -2,8 +2,8 @@
   --bg-color-light: #ffffff;
   --bg-color-dark: #111111;
 
-  --button-bg: #f5a366;
-  --button-bg-hover: #f0b283;
+  /* --button-bg: #f5a366;
+  --button-bg-hover: #f0b283; */
 
   --gradient-colors: #abc2e8, #f2bcb9, #f5a366;
 }
@@ -22,13 +22,13 @@ body {
   background-color: var(--bg-color-dark);
 }
 
-button {
+/* button {
   background-color: var(--button-bg);
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: var(--button-bg-hover);
-}
+} */
 
 .logo-text {
   --logo-gradient: 270deg, var(--gradient-colors);

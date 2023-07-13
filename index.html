@@ -49,37 +49,45 @@
   </head>
 
   <body>
-    <header>
-      <div class="header-container">
-        <div class="header-logo">
-          <a href="#">
-            <img class="logo" src="img/logo.svg" alt="Logo" />
-            <span class="logo-text">Meдведи на мопеде</span>
-          </a>
-        </div>
+    <header class="header">
+      <!-- <div class="header-container"> -->
+      <!-- <div class="header-logo"> -->
+      <a class="header__logo" href="#">
+        <img class="header__logo-image" src="img/logo.svg" alt="Logo" />
+        <span class="header__title">Meдведи на мопеде</span>
+      </a>
+      <!-- </div> -->
 
-        <div class="header-contacts">
-          <p class="adress">Большой Сухаревский пер.17, стр.3</p>
-          <h4 class="adress">8 495 922-92-87</h4>
-          <button class="request-btn">Вам позвонить?</button>
-        </div>
+      <!-- <div class="header__contacts"> -->
+      <p class="header__adress">Большой Сухаревский пер.17, стр.3</p>
+      <h4 class="header__phone">8 495 922-92-87</h4>
+      <button class="button header__button">Вам позвонить?</button>
+      <!-- </div> -->
 
-        <div class="header-burger">
-          <span class="burger-item"></span>
-        </div>
+      <div class="burger header__burger">
+        <span class="burger__item"></span>
       </div>
+      <!-- </div> -->
 
-      <nav class="nav">
-        <ul type="none">
-          <li class="nav-item"><a href="#main-catalog">Каталог мопедов</a></li>
-          <li class="nav-item"><a href="#main-how">Как арендовать</a></li>
-          <li class="nav-item"><a href="#main-price">Тарифы</a></li>
-          <li class="nav-item"><a href="#footer-social">Контакты</a></li>
-        </ul>
+      <nav class="navigation header__navigation">
+        <!-- <ul> -->
+        <!-- <li class="navigation__item"> -->
+        <a class="navigation__item" href="#main-catalog">Каталог мопедов</a>
+        <!-- </li> -->
+        <!-- <li class="navigation__item"> -->
+        <a class="navigation__item" href="#main-how">Как арендовать</a>
+        <!-- </li> -->
+        <!-- <li class="navigation__item"> -->
+        <a class="navigation__item" href="#main-price">Тарифы</a>
+        <!-- </li> -->
+        <!-- <li class="navigation__item"> -->
+        <a class="navigation__item" href="#footer-social">Контакты</a>
+        <!-- </li> -->
+        <!-- </ul> -->
       </nav>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="main-rent">
         <h1>Аренда ретро мопедов в Москве</h1>
         <p>Доступно с правами любой категории</p>
@@ -345,9 +353,9 @@
           class="map"
         ></iframe>
       </section>
-    </main>
+    </main> -->
 
-    <footer>
+    <!-- <footer>
       <section><h2>Подписывайся на нас</h2></section>
 
       <section>
@@ -371,9 +379,9 @@
         <a href="#">Политика конфиденциальности</a>
         <p>Медведи на мопеде 2023</p>
       </section>
-    </footer>
+    </footer> -->
 
-    <script>
+    <!-- <script>
       document
         .querySelector('.header-burger')
         .addEventListener('click', function () {
@@ -387,6 +395,6 @@
           document.querySelector('.nav').classList.remove('opened')
         })
       })
-    </script>
+    </script> -->
   </body>
 </html>

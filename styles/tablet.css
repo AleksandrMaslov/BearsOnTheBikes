@@ -1,1 +1,4 @@
+@import 'common.blocks/header/header.css';
 
+@import 'common.blocks/button/button.css';
+@import 'tablet.blocks/button/button.css';
