@@ -1,12 +1,12 @@
-:root {
+/* :root {
   --bg-color-light: #ffffff;
   --bg-color-dark: #111111;
 
-  /* --button-bg: #f5a366;
-  --button-bg-hover: #f0b283; */
+  --button-bg: #f5a366;
+  --button-bg-hover: #f0b283;
 
   --gradient-colors: #abc2e8, #f2bcb9, #f5a366;
-}
+} */
 
 :root,
 nav ul,
@@ -18,9 +18,9 @@ nav ul,
   background-color: var(--bg-color-light);
 }
 
-body {
+/* body {
   background-color: var(--bg-color-dark);
-}
+} */
 
 /* button {
   background-color: var(--button-bg);
@@ -30,13 +30,13 @@ body {
   background-color: var(--button-bg-hover);
 } */
 
-.logo-text {
+/* .logo-text {
   --logo-gradient: 270deg, var(--gradient-colors);
   background: -webkit-linear-gradient(var(--logo-gradient));
   background: -moz-linear-gradient(var(--logo-gradient));
   background: -o-linear-gradient(var(--logo-gradient));
   background: linear-gradient(var(--logo-gradient));
-}
+} */
 
 .main-catalog {
   --catalog-gradient: 120deg, var(--gradient-colors);
@@ -71,20 +71,18 @@ body {
   background: linear-gradient(var(--carousel-controls-gradient));
 }
 
-.logo-text,
+/* .logo-text, */
 .main-price h3,
 .main-reason li::before,
 .main-how li::before,
 .main-carousel .controls i {
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -ms-background-clip: text;
   -o-background-clip: text;
   background-clip: text;
 
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
   -o-text-fill-color: transparent;
   color: transparent;
 }
