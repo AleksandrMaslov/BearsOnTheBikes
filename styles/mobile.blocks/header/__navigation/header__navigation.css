@@ -1,48 +1,21 @@
 .header__navigation {
+  background-color: var(--bg-color-light);
   color: var(--font-color-dark);
 
-  display: none;
-  position: relative;
+  position: absolute;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden;
 
-  --nav-animation: navigation-animation 0.2s;
-  -webkit-animation: var(--nav-animation);
-  -moz-animation: var(--nav-animation);
-  -o-animation: var(--nav-animation);
-  animation: var(--nav-animation);
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
-@-webkit-keyframes navigation-animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes navigation-animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes navigation-animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes navigation-animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.header__navigation:has(.navigation__toggle:checked) {
+  overflow: visible;
+  margin-top: 15px;
+  max-height: fit-content;
 }

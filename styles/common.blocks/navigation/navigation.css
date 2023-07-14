@@ -1,3 +1,6 @@
 .navigation {
+  position: static;
   display: flex;
+  flex-direction: row;
+  max-height: fit-content;
 }

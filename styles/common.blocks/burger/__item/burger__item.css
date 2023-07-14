@@ -4,17 +4,14 @@
   width: 80%;
   border-radius: 1.5px;
 
-  /* --burger-span-transform: scale(1);
-  -webkit-transform: var(--burger-span-transform);
-  -moz-transform: var(--burger-span-transform);
-  -o-transform: var(--burger-span-transform);
-  transform: var(--burger-span-transform);
+  --burger-item-transition: all 0.1s ease-in-out;
+  -webkit-transition: var(--burger-item-transition);
+  -moz-transition: var(--burger-item-transition);
+  -o-transition: var(--burger-item-transition);
+  transition: var(--burger-item-transition);
 
-  --burger-span-transition: all 0.1s ease-in-out 0s;
-  -webkit-transition: var(--burger-span-transition);
-  -moz-transition: var(--burger-span-transition);
-  -o-transition: var(--burger-span-transition);
-  transition: var(--burger-span-transition); */
+  --burger-transform-before: rotate(-45deg);
+  --burger-transform-after: rotate(45deg);
 }
 
 .burger__item::after,
@@ -27,11 +24,10 @@
   border-radius: 1.5px;
   height: 3px;
 
-  /* --burger-transform: rotate(0) translate(0, 0);
-  -webkit-transform: var(--burger-transform);
-  -moz-transform: var(--burger-transform);
-  -o-transform: var(--burger-transform);
-  transform: var(--burger-transform); */
+  -webkit-transition: var(--burger-item-transition);
+  -moz-transition: var(--burger-item-transition);
+  -o-transition: var(--burger-item-transition);
+  transition: var(--burger-item-transition);
 }
 
 .burger__item::before {
@@ -40,4 +36,24 @@
 
 .burger__item::after {
   bottom: 0;
+}
+
+.header:has(.navigation__toggle:checked) .burger__item {
+  background: transparent;
+}
+
+.header:has(.navigation__toggle:checked) .burger__item::before {
+  -webkit-transform: var(--burger-transform-before);
+  -moz-transform: var(--burger-transform-before);
+  -o-transform: var(--burger-transform-before);
+  transform: var(--burger-transform-before);
+  top: 50%;
+}
+
+.header:has(.navigation__toggle:checked) .burger__item::after {
+  -webkit-transform: var(--burger-transform-after);
+  -moz-transform: var(--burger-transform-after);
+  -o-transform: var(--burger-transform-after);
+  transform: var(--burger-transform-after);
+  top: 50%;
 }

@@ -62,12 +62,17 @@
           <button class="button header__button">Вам позвонить?</button>
         </div>
 
-        <div class="burger header__burger">
+        <label class="burger header__burger" for="navigation-toggle">
           <span class="burger__item"></span>
-        </div>
+        </label>
       </div>
 
       <nav class="navigation header__navigation">
+        <input
+          class="navigation__toggle"
+          type="checkbox"
+          id="navigation-toggle"
+        />
         <a class="navigation__item" href="#main-catalog">Каталог мопедов</a>
         <a class="navigation__item" href="#main-how">Как арендовать</a>
         <a class="navigation__item" href="#main-price">Тарифы</a>
