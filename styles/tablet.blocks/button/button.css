@@ -1,0 +1,7 @@
+.button {
+  width: 240px;
+  height: 50px;
+
+  font-size: var(--font-size-common);
+  line-height: var(--line-common);
+}

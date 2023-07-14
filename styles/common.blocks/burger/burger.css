@@ -1,0 +1,8 @@
+.burger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 21px;
+  width: 30px;
+}

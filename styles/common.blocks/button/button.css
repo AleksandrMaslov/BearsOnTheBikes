@@ -1,5 +1,12 @@
 .button {
   background-color: #f5a366;
+  border-radius: 10px;
+
+  font-family: var(--font-common);
+  color: var(--font-color-light);
+  font-weight: 600;
+
+  cursor: pointer;
 }
 
 .button:hover {

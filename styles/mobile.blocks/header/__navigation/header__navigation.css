@@ -1,0 +1,48 @@
+.header__navigation {
+  color: var(--font-color-dark);
+
+  display: none;
+  position: relative;
+
+  --nav-animation: navigation-animation 0.2s;
+  -webkit-animation: var(--nav-animation);
+  -moz-animation: var(--nav-animation);
+  -o-animation: var(--nav-animation);
+  animation: var(--nav-animation);
+}
+
+@-webkit-keyframes navigation-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes navigation-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes navigation-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navigation-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

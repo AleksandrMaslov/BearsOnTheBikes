@@ -1,3 +1,6 @@
 .header {
   background-color: #111111;
+  font-family: var(--font-common);
+  color: var(--font-color-light);
+  font-weight: 600;
 }

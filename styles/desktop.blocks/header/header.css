@@ -1,6 +1,5 @@
-.button {
-  width: 330px;
-  height: 60px;
+.header {
+  padding: 30px 45px 0;
 
   font-size: var(--font-size-common-desktop);
   line-height: var(--line-common-desktop);
