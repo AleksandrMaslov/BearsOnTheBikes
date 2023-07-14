@@ -1,4 +1,49 @@
-@import 'common.blocks/header/header.css';
+@import 'mobile.blocks/body/body.css';
 
 @import 'common.blocks/button/button.css';
 @import 'mobile.blocks/button/button.css';
+
+@import 'common.blocks/navigation/navigation.css';
+@import 'mobile.blocks/navigation/navigation.css';
+
+@import 'common.blocks/navigation/__item/navigation__item.css';
+@import 'mobile.blocks/navigation/__item/navigation__item.css';
+
+@import 'common.blocks/burger/burger.css';
+@import 'mobile.blocks/burger/burger.css';
+
+@import 'common.blocks/burger/__item/burger__item.css';
+@import 'mobile.blocks/burger/__item/burger__item.css';
+
+@import 'common.blocks/header/header.css';
+@import 'mobile.blocks/header/header.css';
+
+@import 'common.blocks/header/__wrapper/header__wrapper.css';
+@import 'mobile.blocks/header/__wrapper/header__wrapper.css';
+
+@import 'common.blocks/header/__contacts/header__contacts.css';
+@import 'mobile.blocks/header/__contacts/header__contacts.css';
+
+@import 'common.blocks/header/__logo/header__logo.css';
+@import 'mobile.blocks/header/__logo/header__logo.css';
+
+@import 'common.blocks/header/__image/header__image.css';
+@import 'mobile.blocks/header/__image/header__image.css';
+
+@import 'common.blocks/header/__title/header__title.css';
+@import 'mobile.blocks/header/__title/header__title.css';
+
+@import 'common.blocks/header/__adress/header__adress.css';
+@import 'mobile.blocks/header/__adress/header__adress.css';
+
+@import 'common.blocks/header/__phone/header__phone.css';
+@import 'mobile.blocks/header/__phone/header__phone.css';
+
+@import 'common.blocks/header/__button/header__button.css';
+@import 'mobile.blocks/header/__button/header__button.css';
+
+@import 'common.blocks/header/__burger/header__burger.css';
+@import 'mobile.blocks/header/__burger/header__burger.css';
+
+@import 'common.blocks/header/__navigation/header__navigation.css';
+@import 'mobile.blocks/header/__navigation/header__navigation.css';

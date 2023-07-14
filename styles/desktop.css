@@ -1,4 +1,49 @@
-@import 'common.blocks/header/header.css';
+@import 'desktop.blocks/body/body.css';
 
 @import 'common.blocks/button/button.css';
 @import 'desktop.blocks/button/button.css';
+
+@import 'common.blocks/navigation/navigation.css';
+@import 'desktop.blocks/navigation/navigation.css';
+
+@import 'common.blocks/navigation/__item/navigation__item.css';
+@import 'desktop.blocks/navigation/__item/navigation__item.css';
+
+@import 'common.blocks/burger/burger.css';
+@import 'desktop.blocks/burger/burger.css';
+
+@import 'common.blocks/burger/__item/burger__item.css';
+@import 'desktop.blocks/burger/__item/burger__item.css';
+
+@import 'common.blocks/header/header.css';
+@import 'desktop.blocks/header/header.css';
+
+@import 'common.blocks/header/__wrapper/header__wrapper.css';
+@import 'desktop.blocks/header/__wrapper/header__wrapper.css';
+
+@import 'common.blocks/header/__contacts/header__contacts.css';
+@import 'desktop.blocks/header/__contacts/header__contacts.css';
+
+@import 'common.blocks/header/__logo/header__logo.css';
+@import 'desktop.blocks/header/__logo/header__logo.css';
+
+@import 'common.blocks/header/__image/header__image.css';
+@import 'desktop.blocks/header/__image/header__image.css';
+
+@import 'common.blocks/header/__title/header__title.css';
+@import 'desktop.blocks/header/__title/header__title.css';
+
+@import 'common.blocks/header/__adress/header__adress.css';
+@import 'desktop.blocks/header/__adress/header__adress.css';
+
+@import 'common.blocks/header/__phone/header__phone.css';
+@import 'desktop.blocks/header/__phone/header__phone.css';
+
+@import 'common.blocks/header/__button/header__button.css';
+@import 'desktop.blocks/header/__button/header__button.css';
+
+@import 'common.blocks/header/__burger/header__burger.css';
+@import 'desktop.blocks/header/__burger/header__burger.css';
+
+@import 'common.blocks/header/__navigation/header__navigation.css';
+@import 'desktop.blocks/header/__navigation/header__navigation.css';
