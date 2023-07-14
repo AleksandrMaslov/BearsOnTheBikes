@@ -1,57 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-@font-face {
-  font-family: 'SoyuzGrotesk';
-  src: url('../fonts/SoyuzGroteskBold.otf');
-  font-weight: bold;
-  font-style: normal;
-} */
-
-/* :root { */
-/* --font-color-light: #ffffff;
-  --font-color-dark: #111111; */
-
-/* --font-common: 'Inter', sans-serif;
-  --font-size-common: 16px;
-  --line-common: 20px;
-  --font-size-common-desktop: 18px;
-  --line-common-desktop: 22.5px;
-
-  --font-logo: Arial, Helvetica, sans-serif;
-  --font-size-logo: 16px;
-  --font-size-logo-desktop: 22px;
-  --line-logo: 30px;
-
-  --font-headers: 'SoyuzGrotesk', sans-serif;
-  --font-size-h1: 40px;
-  --line-h1: 44px;
-  --font-size-h1-desktop: 80px;
-  --line-h1-desktop: 90px;
-
-  --font-size-h2: 32px;
-  --line-h2: 35.2px;
-  --font-size-h2-desktop: 61px;
-  --line-h2-desktop: 67.1px;
-
-  --font-size-h3: 24px;
-  --line-h3: 26.4px;
-  --font-size-h3-desktop: 40px;
-  --line-h3-desktop: 44px;
-
-  --font-size-h4: 21px;
-  --line-h4: 30px;
-  --font-size-h4-desktop: 27px;
-  --line-h4-desktop: 30px;
-
-  --font-size-h5: 10px;
-  --line-h5: 13px;
-  --font-size-h5-desktop: 14px;
-  --line-h5-desktop: 17.5px; */
-/* } */
-
-body
-/* ,
-button */ {
+body {
   font-family: var(--font-common);
   font-size: var(--font-size-common);
   line-height: var(--line-common);
@@ -89,19 +36,6 @@ h5 {
   line-height: var(--line-h5);
 }
 
-/* nav {
-  color: var(--font-color-dark);
-} */
-
-/* .logo-text {
-  font-family: var(--font-logo);
-  font-size: var(--font-size-logo);
-  line-height: var(--line-logo);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 700;
-} */
-
 .main-location,
 .main-security,
 .main-catalog {
@@ -115,12 +49,6 @@ h5 {
 i.fa-vk {
   font-size: 22px;
 }
-
-/* @media (min-width: 768px) and (max-width: 1439px) {
-  nav {
-    color: var(--font-color-light) !important;
-  }
-} */
 
 @media (min-width: 1440px) {
   :root {
@@ -141,11 +69,5 @@ i.fa-vk {
 
     --font-size-h5: var(--font-size-h5-desktop);
     --line-h5: var(--line-h5-desktop);
-
-    /* --font-size-logo: var(--font-size-logo-desktop); */
   }
-
-  /* nav {
-    color: var(--font-color-light) !important;
-  } */
 }

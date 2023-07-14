@@ -1,42 +1,7 @@
-/* :root {
-  --bg-color-light: #ffffff;
-  --bg-color-dark: #111111;
-
-  --button-bg: #f5a366;
-  --button-bg-hover: #f0b283;
-
-  --gradient-colors: #abc2e8, #f2bcb9, #f5a366;
-} */
-
-:root,
-nav ul,
-.header-burger span,
-.header-burger::after,
-.header-burger::before,
 .main-location,
 .main-security {
   background-color: var(--bg-color-light);
 }
-
-/* body {
-  background-color: var(--bg-color-dark);
-} */
-
-/* button {
-  background-color: var(--button-bg);
-} */
-
-/* button:hover {
-  background-color: var(--button-bg-hover);
-} */
-
-/* .logo-text {
-  --logo-gradient: 270deg, var(--gradient-colors);
-  background: -webkit-linear-gradient(var(--logo-gradient));
-  background: -moz-linear-gradient(var(--logo-gradient));
-  background: -o-linear-gradient(var(--logo-gradient));
-  background: linear-gradient(var(--logo-gradient));
-} */
 
 .main-catalog {
   --catalog-gradient: 120deg, var(--gradient-colors);
@@ -71,7 +36,6 @@ nav ul,
   background: linear-gradient(var(--carousel-controls-gradient));
 }
 
-/* .logo-text, */
 .main-price h3,
 .main-reason li::before,
 .main-how li::before,
@@ -98,16 +62,4 @@ nav ul,
   background-image: var(--bg-gradient), var(--frame-gradient);
   background-clip: content-box, border-box;
   background-origin: border-box;
-}
-
-@media (min-width: 768px) and (max-width: 1439px) {
-  nav ul {
-    background-color: var(--bg-color-dark) !important;
-  }
-}
-
-@media (min-width: 1440px) {
-  nav ul {
-    background-color: var(--bg-color-dark) !important;
-  }
 }

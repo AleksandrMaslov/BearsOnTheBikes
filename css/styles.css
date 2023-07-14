@@ -20,17 +20,6 @@
   --header-m-bottom: 25px;
   --header-m-bottom-desktop: 30px;
 
-  /* --logo-size: 40px;
-  --logo-size-lg: 50px; */
-
-  /* --btn-width: 240px;
-  --btn-width-desktop: 330px;
-  --btn-height: 50px;
-  --btn-height-desktop: 60px; */
-
-  /* --btn-request-width: 225px;
-  --btn-request-height: 50px; */
-
   --carousel-height: 400px;
   --carousel-height-desktop: 500px;
 
@@ -82,66 +71,6 @@
   --wrapper-3-height: calc(var(--img-3-height) + 24px);
   --wrapper-3-height-desktop: calc(var(--img-3-height) + 30px);
 }
-
-/* body {
-  width: 414px;
-} */
-
-/* button {
-  width: var(--btn-width);
-  height: var(--btn-height);
-  border-radius: 10px;
-  border: 0;
-} */
-
-/* h1,
-h2,
-h3,
-h4 {
-  margin-bottom: var(--header-m-bottom);
-}
-
-p {
-  margin-bottom: var(--spacingy);
-}
-
-header {
-  margin-bottom: var(--spacingy-common);
-} */
-
-/* .header-container {
-  padding: var(--spacingy) var(--spacingx-common-s);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* .header-contacts h4,
-.header-contacts p {
-  margin: 0;
-} */
-
-/* .header-logo a {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-} */
-
-/* .logo {
-  width: var(--logo-size);
-} */
-/* 
-.header-contacts {
-  width: 62%;
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* .header-contacts .request-btn {
-  width: var(--btn-request-width);
-  height: var(--btn-request-height);
-} */
 
 .main-rent {
   padding: 0 var(--spacingx-common-s);
@@ -385,24 +314,6 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  /* body {
-    width: 720px;
-  } */
-
-  /* .header-contacts {
-    width: auto;
-    display: flex;
-    justify-content: flex-end;
-  } */
-
-  /* .header-contacts .adress {
-    display: none;
-  } */
-
-  /* .header-contacts .request-btn {
-    display: block;
-  } */
-
   .main-rent h1,
   .main-rent p {
     width: 60%;
@@ -430,11 +341,6 @@ footer {
 
     --header-m-bottom: var(--header-m-bottom-desktop);
 
-    /* --logo-size: var(--logo-size-lg); */
-
-    --btn-width: var(--btn-width-desktop);
-    --btn-height: var(--btn-height-desktop);
-
     --carousel-height: var(--carousel-height-desktop);
 
     --img-radius: var(--img-radius-desktop);
@@ -461,23 +367,6 @@ footer {
 
     --wrapper-3-width: var(--wrapper-3-width-desktop);
     --wrapper-3-height: var(--wrapper-3-height-desktop);
-  }
-
-  /* body {
-    width: 1440px;
-  } */
-
-  .header-logo a {
-    gap: 20px;
-  }
-
-  .header-contacts {
-    display: flex;
-  }
-
-  .header-contacts .request-btn,
-  .header-contacts .adress {
-    display: block;
   }
 
   .main-rent p {
