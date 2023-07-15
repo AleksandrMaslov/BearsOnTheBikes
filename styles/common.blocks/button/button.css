@@ -2,9 +2,10 @@
   background-color: #f5a366;
   border-radius: 10px;
 
-  font-family: var(--font-common);
-  color: var(--font-color-light);
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
+  line-height: 30px;
+  color: var(--font-color-light);
 
   cursor: pointer;
 }

@@ -1,10 +1,29 @@
 @import 'mobile.blocks/body/body.css';
-@import 'common.blocks/button/button.css';
-@import 'mobile.blocks/button/button.css';
-@import 'common.blocks/navigation/navigation.css';
-@import 'common.blocks/navigation/navigation__toggle.css';
+
 @import 'common.blocks/burger/burger.css';
 @import 'common.blocks/burger/burger__item.css';
+
+@import 'common.blocks/button/button.css';
+@import 'mobile.blocks/button/button.css';
+
+@import 'common.blocks/navigation/navigation.css';
+@import 'mobile.blocks/navigation/navigation.css';
+@import 'common.blocks/navigation/navigation__toggle.css';
+
+@import 'common.blocks/paragraph/paragraph.css';
+@import 'mobile.blocks/paragraph/paragraph.css';
+@import 'common.blocks/paragraph/paragraph_semibold.css';
+
+@import 'common.blocks/title/title-h1.css';
+@import 'common.blocks/title/title-h2.css';
+@import 'common.blocks/title/title-h3.css';
+@import 'common.blocks/title/title-h4.css';
+@import 'common.blocks/title/title-h5.css';
+@import 'mobile.blocks/title/title-h1.css';
+@import 'mobile.blocks/title/title-h2.css';
+@import 'mobile.blocks/title/title-h3.css';
+@import 'mobile.blocks/title/title-h4.css';
+@import 'mobile.blocks/title/title-h5.css';
 
 @import 'common.blocks/header/header.css';
 @import 'mobile.blocks/header/header.css';

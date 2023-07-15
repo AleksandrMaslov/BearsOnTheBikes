@@ -1,7 +1,5 @@
 .header {
   position: relative;
-  background-color: #111111;
-  font-family: var(--font-common);
+  background-color: var(--bg-color-dark);
   color: var(--font-color-light);
-  font-weight: 600;
 }

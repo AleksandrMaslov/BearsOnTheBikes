@@ -1,8 +1,27 @@
 @import 'desktop.blocks/body/body.css';
+
 @import 'common.blocks/button/button.css';
 @import 'desktop.blocks/button/button.css';
+
 @import 'common.blocks/navigation/navigation.css';
+@import 'desktop.blocks/navigation/navigation.css';
 @import 'common.blocks/navigation/navigation__toggle.css';
+
+@import 'common.blocks/paragraph/paragraph.css';
+@import 'desktop.blocks/paragraph/paragraph.css';
+@import 'common.blocks/paragraph/paragraph_semibold.css';
+
+@import 'common.blocks/title/title-h1.css';
+@import 'common.blocks/title/title-h2.css';
+@import 'common.blocks/title/title-h3.css';
+@import 'common.blocks/title/title-h4.css';
+@import 'common.blocks/title/title-h5.css';
+@import 'desktop.blocks/title/title-h1.css';
+@import 'desktop.blocks/title/title-h2.css';
+@import 'desktop.blocks/title/title-h3.css';
+@import 'desktop.blocks/title/title-h4.css';
+@import 'desktop.blocks/title/title-h5.css';
+
 @import 'common.blocks/burger/burger.css';
 @import 'common.blocks/burger/burger__item.css';
 
@@ -19,7 +38,6 @@
 @import 'desktop.blocks/header/header__title.css';
 @import 'common.blocks/header/header__adress.css';
 @import 'common.blocks/header/header__phone.css';
-@import 'desktop.blocks/header/header__phone.css';
 @import 'common.blocks/header/header__button.css';
 @import 'desktop.blocks/header/header__button.css';
 @import 'desktop.blocks/header/header__burger.css';

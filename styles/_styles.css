@@ -3,6 +3,9 @@
 @import url(desktop.css) (min-width: 1440px);
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 @font-face {
   font-family: 'SoyuzGrotesk';
   src: url('../fonts/SoyuzGroteskBold.otf');
@@ -16,33 +19,4 @@
 
   --font-color-light: #ffffff;
   --font-color-dark: #111111;
-
-  --gradient-colors: #abc2e8, #f2bcb9, #f5a366;
-
-  --font-common: 'Inter', sans-serif;
-  --font-size-common: 16px;
-  --line-common: 20px;
-  --font-size-common-desktop: 18px;
-  --line-common-desktop: 22.5px;
-
-  --font-headers: 'SoyuzGrotesk', sans-serif;
-  --font-size-h1: 40px;
-  --line-h1: 44px;
-  --font-size-h1-desktop: 80px;
-  --line-h1-desktop: 90px;
-
-  --font-size-h2: 32px;
-  --line-h2: 35.2px;
-  --font-size-h2-desktop: 61px;
-  --line-h2-desktop: 67.1px;
-
-  --font-size-h3: 24px;
-  --line-h3: 26.4px;
-  --font-size-h3-desktop: 40px;
-  --line-h3-desktop: 44px;
-
-  --font-size-h5: 10px;
-  --line-h5: 13px;
-  --font-size-h5-desktop: 14px;
-  --line-h5-desktop: 17.5px;
 }

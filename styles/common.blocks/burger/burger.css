@@ -5,4 +5,9 @@
   justify-content: flex-end;
   height: 21px;
   width: 30px;
+
+  --bg-color: #ffffff;
+  --burger-item-transition: all 0.1s ease-in-out;
+  --burger-item-transform-before: rotate(-45deg);
+  --burger-item-transform-after: rotate(45deg);
 }

@@ -1,17 +1,13 @@
 .burger__item {
-  background-color: var(--bg-color-light);
   height: 3px;
   width: 80%;
   border-radius: 1.5px;
+  background-color: var(--bg-color-light);
 
-  --burger-item-transition: all 0.1s ease-in-out;
   -webkit-transition: var(--burger-item-transition);
   -moz-transition: var(--burger-item-transition);
   -o-transition: var(--burger-item-transition);
   transition: var(--burger-item-transition);
-
-  --burger-transform-before: rotate(-45deg);
-  --burger-transform-after: rotate(45deg);
 }
 
 .burger__item::after,
@@ -43,17 +39,17 @@
 }
 
 .header:has(.navigation__toggle:checked) .burger__item::before {
-  -webkit-transform: var(--burger-transform-before);
-  -moz-transform: var(--burger-transform-before);
-  -o-transform: var(--burger-transform-before);
-  transform: var(--burger-transform-before);
+  -webkit-transform: var(--burger-item-transform-before);
+  -moz-transform: var(--burger-item-transform-before);
+  -o-transform: var(--burger-item-transform-before);
+  transform: var(--burger-item-transform-before);
   top: 50%;
 }
 
 .header:has(.navigation__toggle:checked) .burger__item::after {
-  -webkit-transform: var(--burger-transform-after);
-  -moz-transform: var(--burger-transform-after);
-  -o-transform: var(--burger-transform-after);
-  transform: var(--burger-transform-after);
+  -webkit-transform: var(--burger-item-transform-after);
+  -moz-transform: var(--burger-item-transform-after);
+  -o-transform: var(--burger-item-transform-after);
+  transform: var(--burger-item-transform-after);
   top: 50%;
 }

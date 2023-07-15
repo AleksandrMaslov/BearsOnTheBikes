@@ -1,7 +1,5 @@
 .button {
   width: 330px;
   height: 60px;
-
-  font-size: var(--font-size-common-desktop);
-  line-height: var(--line-common-desktop);
+  font-size: 20px;
 }
