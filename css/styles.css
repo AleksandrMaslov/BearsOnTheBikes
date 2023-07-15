@@ -72,11 +72,6 @@
   --wrapper-3-height-desktop: calc(var(--img-3-height) + 30px);
 }
 
-.main-rent {
-  padding: 0 var(--spacingx-common-s);
-  margin-bottom: var(--spacingy-common);
-}
-
 .main-reason {
   padding: 0 var(--spacingx-common-s);
   margin-bottom: var(--spacingy-common);

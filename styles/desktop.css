@@ -4,12 +4,12 @@
 @import 'desktop.blocks/button/button.css';
 
 @import 'common.blocks/navigation/navigation.css';
-@import 'desktop.blocks/navigation/navigation.css';
 @import 'common.blocks/navigation/navigation__toggle.css';
+@import 'desktop.blocks/navigation/navigation.css';
 
 @import 'common.blocks/paragraph/paragraph.css';
-@import 'desktop.blocks/paragraph/paragraph.css';
 @import 'common.blocks/paragraph/paragraph_semibold.css';
+@import 'desktop.blocks/paragraph/paragraph.css';
 
 @import 'common.blocks/title/title-h1.css';
 @import 'common.blocks/title/title-h2.css';
@@ -26,19 +26,26 @@
 @import 'common.blocks/burger/burger__item.css';
 
 @import 'common.blocks/header/header.css';
-@import 'desktop.blocks/header/header.css';
 @import 'common.blocks/header/header__wrapper.css';
-@import 'desktop.blocks/header/header__wrapper.css';
 @import 'common.blocks/header/header__contacts.css';
-@import 'desktop.blocks/header/header__contacts.css';
 @import 'common.blocks/header/header__logo.css';
-@import 'desktop.blocks/header/header__logo.css';
-@import 'desktop.blocks/header/header__image.css';
 @import 'common.blocks/header/header__title.css';
-@import 'desktop.blocks/header/header__title.css';
 @import 'common.blocks/header/header__adress.css';
 @import 'common.blocks/header/header__phone.css';
 @import 'common.blocks/header/header__button.css';
+@import 'desktop.blocks/header/header.css';
+@import 'desktop.blocks/header/header__wrapper.css';
+@import 'desktop.blocks/header/header__contacts.css';
+@import 'desktop.blocks/header/header__logo.css';
+@import 'desktop.blocks/header/header__image.css';
+@import 'desktop.blocks/header/header__title.css';
 @import 'desktop.blocks/header/header__button.css';
 @import 'desktop.blocks/header/header__burger.css';
 @import 'desktop.blocks/header/header__navigation.css';
+
+@import 'common.blocks/main/main.css';
+
+@import 'common.blocks/rent/rent.css';
+@import 'common.blocks/rent/rent__wrapper.css';
+@import 'desktop.blocks/rent/rent.css';
+@import 'desktop.blocks/rent/rent__wrapper.css';

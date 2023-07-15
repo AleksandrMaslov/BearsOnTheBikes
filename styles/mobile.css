@@ -7,12 +7,12 @@
 @import 'mobile.blocks/button/button.css';
 
 @import 'common.blocks/navigation/navigation.css';
-@import 'mobile.blocks/navigation/navigation.css';
 @import 'common.blocks/navigation/navigation__toggle.css';
+@import 'mobile.blocks/navigation/navigation.css';
 
 @import 'common.blocks/paragraph/paragraph.css';
-@import 'mobile.blocks/paragraph/paragraph.css';
 @import 'common.blocks/paragraph/paragraph_semibold.css';
+@import 'mobile.blocks/paragraph/paragraph.css';
 
 @import 'common.blocks/title/title-h1.css';
 @import 'common.blocks/title/title-h2.css';
@@ -26,16 +26,23 @@
 @import 'mobile.blocks/title/title-h5.css';
 
 @import 'common.blocks/header/header.css';
-@import 'mobile.blocks/header/header.css';
 @import 'common.blocks/header/header__wrapper.css';
 @import 'common.blocks/header/header__contacts.css';
-@import 'mobile.blocks/header/header__contacts.css';
 @import 'common.blocks/header/header__logo.css';
-@import 'mobile.blocks/header/header__logo.css';
-@import 'mobile.blocks/header/header__image.css';
 @import 'common.blocks/header/header__title.css';
-@import 'mobile.blocks/header/header__title.css';
 @import 'common.blocks/header/header__adress.css';
 @import 'common.blocks/header/header__phone.css';
 @import 'common.blocks/header/header__button.css';
+@import 'mobile.blocks/header/header.css';
+@import 'mobile.blocks/header/header__contacts.css';
+@import 'mobile.blocks/header/header__logo.css';
+@import 'mobile.blocks/header/header__image.css';
+@import 'mobile.blocks/header/header__title.css';
 @import 'mobile.blocks/header/header__navigation.css';
+
+@import 'common.blocks/main/main.css';
+
+@import 'common.blocks/rent/rent.css';
+@import 'common.blocks/rent/rent__wrapper.css';
+@import 'mobile.blocks/rent/rent.css';
+@import 'mobile.blocks/rent/rent__wrapper.css';
