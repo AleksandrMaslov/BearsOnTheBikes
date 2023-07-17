@@ -1,3 +1,6 @@
+@import 'common.blocks/body/body_bg_dark.css';
+@import 'common.blocks/body/body_bg_light.css';
+@import 'common.blocks/body/body_bg_gradient.css';
 @import 'tablet.blocks/body/body.css';
 
 @import 'common.blocks/burger/burger.css';
@@ -45,7 +48,16 @@
 
 @import 'common.blocks/main/main.css';
 
-@import 'common.blocks/rent/rent.css';
 @import 'common.blocks/rent/rent__wrapper.css';
 @import 'tablet.blocks/rent/rent.css';
 @import 'tablet.blocks/rent/rent__wrapper.css';
+
+@import 'common.blocks/reason/reason__item.css';
+@import 'common.blocks/reason/reason__list.css';
+@import 'common.blocks/reason/reason__wrapper.css';
+@import 'tablet.blocks/reason/reason.css';
+@import 'tablet.blocks/reason/reason__item.css';
+@import 'tablet.blocks/reason/reason__list.css';
+@import 'tablet.blocks/reason/reason__text-1.css';
+@import 'tablet.blocks/reason/reason__title.css';
+@import 'tablet.blocks/reason/reason__wrapper.css';

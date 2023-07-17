@@ -5,7 +5,10 @@
     <title>Медведи на мопеде</title>
     <meta name="description" content="Услуги аренды ретро мопедов" />
     <meta name="author" content="Maslov Aleksandr" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
 
     <!-- FAVICON -->
     <link
@@ -49,10 +52,10 @@
   </head>
 
   <body class="body">
-    <header class="header">
+    <header class="header body_bg_dark">
       <div class="header__wrapper">
         <a class="header__logo" href="#">
-          <img class="header__image" src="img/logo.svg" alt="Logo" />
+          <img class="header__image" src="img/header/logo.svg" alt="Logo" />
           <span class="header__title">Meдведи на мопеде</span>
         </a>
 
@@ -83,7 +86,7 @@
     </header>
 
     <main class="main">
-      <section class="rent">
+      <section class="rent body_bg_dark">
         <div class="rent__wrapper">
           <h1 class="title-h1 rent__title">Аренда ретро мопедов в Москве</h1>
           <h4 class="title-h4 rent__text">
@@ -107,30 +110,43 @@
         </div>
       </section> -->
 
-      <!-- <section class="main-reason">
-        <ul type="none">
-          <li>Яркое катание с друзьями</li>
-          <li>Незабываемое свидание</li>
-          <li>Сочная фотосессия</li>
-        </ul>
+      <section class="reason body_bg_dark">
+        <div class="reason__wrapper">
+          <ul class="reason__list">
+            <li class="reason__item">
+              <img src="img/marker.svg" alt="marker" />
+              <h4 class="title-h4">Яркое катание с друзьями</h4>
+            </li>
+            <li class="reason__item">
+              <img src="img/marker.svg" alt="marker" />
+              <h4 class="title-h4">Незабываемое свидание</h4>
+            </li>
+            <li class="reason__item">
+              <img src="img/marker.svg" alt="marker" />
+              <h4 class="title-h4">Сочная фотосессия</h4>
+            </li>
+          </ul>
 
-        <h2>Почему выгодно арендовать мопед?</h2>
-        <p>
-          Жарким летом в большом городе именно юркий скутер сэкономит массу
-          времени и здоровья – в пробках стоять не надо, дышать выхлопами
-          придется гораздо меньше чем с кондиционером. Приютиться на забитой
-          парковке не проблема, как и выехать с нее. А у молодежи сейчас в моде
-          покатушки – можно арендовать сразу несколько «лошадок» и отправиться
-          куда-нибудь группой друзей. Взять мопед в аренду намного дешевле, чем
-          легковую машину. Или всякий раз вызывать такси.
-        </p>
-        <p>
-          Достаточно предъявить паспорт и оплатить скромный аванс за
-          пользование, подписать договор аренды – и уехать по своим делам на
-          исправной, чистенькой двухколесной машинке. Если времени не хватит,
-          договор можно продлить.
-        </p>
-      </section> -->
+          <h2 class="title-h2 reason__title">
+            Почему выгодно арендовать мопед?
+          </h2>
+          <p class="paragraph reason__text-1">
+            Жарким летом в большом городе именно юркий скутер сэкономит массу
+            времени и здоровья – в пробках стоять не надо, дышать выхлопами
+            придется гораздо меньше чем с кондиционером. Приютиться на забитой
+            парковке не проблема, как и выехать с нее. А у молодежи сейчас в
+            моде покатушки – можно арендовать сразу несколько «лошадок» и
+            отправиться куда-нибудь группой друзей. Взять мопед в аренду намного
+            дешевле, чем легковую машину. Или всякий раз вызывать такси.
+          </p>
+          <p class="paragraph reason__text-2">
+            Достаточно предъявить паспорт и оплатить скромный аванс за
+            пользование, подписать договор аренды – и уехать по своим делам на
+            исправной, чистенькой двухколесной машинке. Если времени не хватит,
+            договор можно продлить.
+          </p>
+        </div>
+      </section>
 
       <!-- <section class="main-imgs-b">
         <div class="img-wrapper wrapper-3">
@@ -139,7 +155,7 @@
         </div>
       </section> -->
 
-      <!-- <section class="main-catalog">
+      <!-- <section class="carousel body_bg_gradient">
         <h2 id="main-catalog">Каталог мопедов</h2>
         <div class="catalog-slider">
           <input type="radio" name="catalog" id="slide_1" />
