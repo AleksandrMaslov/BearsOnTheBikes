@@ -12,6 +12,7 @@
 @import 'common.blocks/navigation/navigation.css';
 @import 'common.blocks/navigation/navigation__toggle.css';
 @import 'mobile.blocks/navigation/navigation.css';
+@import 'mobile.blocks/navigation/navigation__item.css';
 
 @import 'common.blocks/paragraph/paragraph.css';
 @import 'common.blocks/paragraph/paragraph_semibold.css';

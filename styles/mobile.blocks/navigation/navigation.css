@@ -1,4 +1,10 @@
 .navigation {
   font-size: 16px;
   line-height: 20px;
+
+  --navigation-transition: all 0.4s ease-out;
+  -webkit-transition: var(--navigation-transition);
+  -moz-transition: var(--navigation-transition);
+  -o-transition: var(--navigation-transition);
+  transition: var(--navigation-transition);
 }

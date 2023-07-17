@@ -6,4 +6,10 @@
 
   font-family: 'Inter', sans-serif;
   font-weight: 600;
+
+  --navigation-transition: none;
+  -webkit-transition: var(--navigation-transition);
+  -moz-transition: var(--navigation-transition);
+  -o-transition: var(--navigation-transition);
+  transition: var(--navigation-transition);
 }
