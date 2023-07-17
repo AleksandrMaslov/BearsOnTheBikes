@@ -50,6 +50,7 @@
 
 @import 'common.blocks/rent/rent__wrapper.css';
 @import 'tablet.blocks/rent/rent.css';
+@import 'tablet.blocks/rent/rent__button.css';
 @import 'tablet.blocks/rent/rent__wrapper.css';
 
 @import 'common.blocks/reason/reason__item.css';
@@ -61,3 +62,19 @@
 @import 'tablet.blocks/reason/reason__text-1.css';
 @import 'tablet.blocks/reason/reason__title.css';
 @import 'tablet.blocks/reason/reason__wrapper.css';
+
+@import 'common.blocks/catalog/catalog.css';
+@import 'common.blocks/catalog/catalog__title.css';
+@import 'tablet.blocks/catalog/catalog.css';
+
+@import 'common.blocks/carousel/carousel.css';
+@import 'common.blocks/carousel/carousel__radio.css';
+@import 'common.blocks/carousel/carousel__bullet.css';
+@import 'common.blocks/carousel/carousel__bullets.css';
+@import 'common.blocks/carousel/carousel__inner.css';
+@import 'common.blocks/carousel/carousel__overflow.css';
+@import 'common.blocks/carousel/carousel__slide.css';
+@import 'tablet.blocks/carousel/carousel__bullet.css';
+@import 'tablet.blocks/carousel/carousel__button.css';
+@import 'tablet.blocks/carousel/carousel__overflow.css';
+@import 'tablet.blocks/carousel/carousel__slide.css';

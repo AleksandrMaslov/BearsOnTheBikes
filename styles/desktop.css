@@ -50,6 +50,7 @@
 
 @import 'common.blocks/rent/rent__wrapper.css';
 @import 'desktop.blocks/rent/rent.css';
+@import 'desktop.blocks/rent/rent__button.css';
 @import 'desktop.blocks/rent/rent__wrapper.css';
 
 @import 'common.blocks/reason/reason__item.css';
@@ -61,3 +62,20 @@
 @import 'desktop.blocks/reason/reason__text-1.css';
 @import 'desktop.blocks/reason/reason__title.css';
 @import 'desktop.blocks/reason/reason__wrapper.css';
+
+@import 'common.blocks/catalog/catalog.css';
+@import 'common.blocks/catalog/catalog__title.css';
+@import 'desktop.blocks/catalog/catalog.css';
+
+@import 'common.blocks/carousel/carousel.css';
+@import 'common.blocks/carousel/carousel__radio.css';
+@import 'common.blocks/carousel/carousel__bullet.css';
+@import 'common.blocks/carousel/carousel__bullets.css';
+@import 'common.blocks/carousel/carousel__inner.css';
+@import 'common.blocks/carousel/carousel__overflow.css';
+@import 'common.blocks/carousel/carousel__slide.css';
+@import 'desktop.blocks/carousel/carousel.css';
+@import 'desktop.blocks/carousel/carousel__bullet.css';
+@import 'desktop.blocks/carousel/carousel__button.css';
+@import 'desktop.blocks/carousel/carousel__overflow.css';
+@import 'desktop.blocks/carousel/carousel__slide.css';

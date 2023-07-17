@@ -1,0 +1,4 @@
+.carousel {
+  --slide-width: var(--slide-width-desktop);
+  --slide-gap: var(--slide-gap-desktop);
+}
