@@ -3,14 +3,6 @@
   background-color: var(--bg-color-light);
 }
 
-.main-catalog {
-  --catalog-gradient: 120deg, var(--gradient-colors);
-  background-image: -webkit-linear-gradient(var(--catalog-gradient));
-  background-image: -moz-linear-gradient(var(--catalog-gradient));
-  background-image: -o-linear-gradient(var(--catalog-gradient));
-  background-image: linear-gradient(var(--catalog-gradient));
-}
-
 .main-reason li::before,
 .main-how li::before {
   --markers-gradient: 180deg, var(--gradient-colors);
