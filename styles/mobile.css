@@ -76,3 +76,5 @@
 @import 'mobile.blocks/carousel/carousel__button.css';
 @import 'mobile.blocks/carousel/carousel__overflow.css';
 @import 'mobile.blocks/carousel/carousel__slide.css';
+
+@import 'mobile.blocks/security/security.css';

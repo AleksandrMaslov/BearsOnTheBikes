@@ -1,0 +1,6 @@
+.security {
+  padding: 160px;
+  display: flex;
+  flex-direction: row;
+  gap: 145px;
+}

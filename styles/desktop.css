@@ -79,3 +79,5 @@
 @import 'desktop.blocks/carousel/carousel__button.css';
 @import 'desktop.blocks/carousel/carousel__overflow.css';
 @import 'desktop.blocks/carousel/carousel__slide.css';
+
+@import 'desktop.blocks/security/security.css';

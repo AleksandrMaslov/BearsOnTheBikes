@@ -78,3 +78,5 @@
 @import 'tablet.blocks/carousel/carousel__button.css';
 @import 'tablet.blocks/carousel/carousel__overflow.css';
 @import 'tablet.blocks/carousel/carousel__slide.css';
+
+@import 'tablet.blocks/security/security.css';
