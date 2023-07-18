@@ -67,6 +67,7 @@
 
 @import 'common.blocks/carousel/carousel.css';
 @import 'common.blocks/carousel/carousel__radio.css';
+@import 'common.blocks/carousel/carousel__button.css';
 @import 'common.blocks/carousel/carousel__bullet.css';
 @import 'common.blocks/carousel/carousel__bullets.css';
 @import 'common.blocks/carousel/carousel__inner.css';
@@ -78,3 +79,13 @@
 @import 'mobile.blocks/carousel/carousel__slide.css';
 
 @import 'mobile.blocks/security/security.css';
+
+@import 'common.blocks/how/how__container.css';
+@import 'common.blocks/how/how__list.css';
+@import 'common.blocks/how/how__item.css';
+@import 'mobile.blocks/how/how__container.css';
+@import 'mobile.blocks/how/how__grid.css';
+@import 'mobile.blocks/how/how__list.css';
+@import 'mobile.blocks/how/how__item.css';
+@import 'mobile.blocks/how/how__title.css';
+@import 'mobile.blocks/how/how__wrapper.css';
