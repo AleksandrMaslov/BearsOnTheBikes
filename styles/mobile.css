@@ -30,6 +30,7 @@
 @import 'mobile.blocks/title/title-h5.css';
 
 @import 'common.blocks/header/header.css';
+@import 'common.blocks/header/header__navigation-wrap.css';
 @import 'common.blocks/header/header__wrapper.css';
 @import 'common.blocks/header/header__contacts.css';
 @import 'common.blocks/header/header__logo.css';
@@ -37,7 +38,7 @@
 @import 'common.blocks/header/header__adress.css';
 @import 'common.blocks/header/header__phone.css';
 @import 'common.blocks/header/header__button.css';
-@import 'mobile.blocks/header/header.css';
+@import 'mobile.blocks/header/header__wrapper.css';
 @import 'mobile.blocks/header/header__contacts.css';
 @import 'mobile.blocks/header/header__logo.css';
 @import 'mobile.blocks/header/header__image.css';
@@ -46,24 +47,23 @@
 
 @import 'common.blocks/main/main.css';
 
-@import 'common.blocks/rent/rent__wrapper.css';
-@import 'mobile.blocks/rent/rent.css';
+@import 'common.blocks/rent/rent.css';
+@import 'common.blocks/rent/rent__container.css';
 @import 'mobile.blocks/rent/rent__button.css';
-@import 'mobile.blocks/rent/rent__wrapper.css';
+@import 'mobile.blocks/rent/rent__container.css';
 
+@import 'common.blocks/reason/reason.css';
 @import 'common.blocks/reason/reason__item.css';
 @import 'common.blocks/reason/reason__list.css';
-@import 'common.blocks/reason/reason__wrapper.css';
-@import 'mobile.blocks/reason/reason.css';
 @import 'mobile.blocks/reason/reason__item.css';
 @import 'mobile.blocks/reason/reason__list.css';
 @import 'mobile.blocks/reason/reason__text-1.css';
 @import 'mobile.blocks/reason/reason__title.css';
-@import 'mobile.blocks/reason/reason__wrapper.css';
+@import 'mobile.blocks/reason/reason__container.css';
 
 @import 'common.blocks/catalog/catalog.css';
 @import 'common.blocks/catalog/catalog__title.css';
-@import 'mobile.blocks/catalog/catalog.css';
+@import 'mobile.blocks/catalog/catalog__container.css';
 
 @import 'common.blocks/carousel/carousel.css';
 @import 'common.blocks/carousel/carousel__radio.css';
@@ -78,8 +78,11 @@
 @import 'mobile.blocks/carousel/carousel__overflow.css';
 @import 'mobile.blocks/carousel/carousel__slide.css';
 
-@import 'mobile.blocks/security/security.css';
+@import 'common.blocks/security/security.css';
+@import 'common.blocks/security/security__container.css';
+@import 'mobile.blocks/security/security__container.css';
 
+@import 'common.blocks/how/how.css';
 @import 'common.blocks/how/how__container.css';
 @import 'common.blocks/how/how__list.css';
 @import 'common.blocks/how/how__item.css';
