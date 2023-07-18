@@ -95,3 +95,11 @@
 @import 'tablet.blocks/how/how__item.css';
 @import 'tablet.blocks/how/how__title.css';
 @import 'tablet.blocks/how/how__wrapper.css';
+
+@import 'common.blocks/price/price.css';
+@import 'common.blocks/price/price__container.css';
+@import 'common.blocks/price/price__item.css';
+@import 'common.blocks/price/price__time.css';
+@import 'common.blocks/price/price__wrapper.css';
+@import 'tablet.blocks/price/price__container.css';
+@import 'tablet.blocks/price/price__item.css';

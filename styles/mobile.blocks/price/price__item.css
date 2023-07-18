@@ -1,0 +1,9 @@
+.price__item:not(:last-child) {
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.price__item:nth-child(3) {
+  margin-right: 0;
+  border-right: none;
+}
