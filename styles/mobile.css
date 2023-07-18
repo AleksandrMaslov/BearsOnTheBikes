@@ -100,3 +100,10 @@
 @import 'common.blocks/price/price__wrapper.css';
 @import 'mobile.blocks/price/price__container.css';
 @import 'mobile.blocks/price/price__item.css';
+
+@import 'common.blocks/location/location.css';
+@import 'common.blocks/location/location__container.css';
+@import 'common.blocks/location/location__wrapper.css';
+@import 'common.blocks/location/location__map.css';
+@import 'mobile.blocks/location/location__container.css';
+@import 'mobile.blocks/location/location__wrapper.css';

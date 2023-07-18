@@ -103,3 +103,10 @@
 @import 'common.blocks/price/price__wrapper.css';
 @import 'desktop.blocks/price/price__container.css';
 @import 'desktop.blocks/price/price__item.css';
+
+@import 'common.blocks/location/location.css';
+@import 'common.blocks/location/location__container.css';
+@import 'common.blocks/location/location__wrapper.css';
+@import 'common.blocks/location/location__map.css';
+@import 'desktop.blocks/location/location__container.css';
+@import 'desktop.blocks/location/location__wrapper.css';
