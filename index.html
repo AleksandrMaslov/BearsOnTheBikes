@@ -445,15 +445,21 @@
         </div>
       </section>
 
-      <!-- <section class="main-carousel">
-        <input type="radio" name="slider" id="slide1" checked />
-        <input type="radio" name="slider" id="slide2" />
-        <input type="radio" name="slider" id="slide3" />
-        <input type="radio" name="slider" id="slide4" />
-        <input type="radio" name="slider" id="slide5" />
-        <input type="radio" name="slider" id="slide6" />
+      <!-- <section class="slider">
+        <input
+          class="slider__radio"
+          type="radio"
+          name="slider"
+          id="slide1"
+          checked
+        />
+        <input class="slider__radio" type="radio" name="slider" id="slide2" />
+        <input class="slider__radio" type="radio" name="slider" id="slide3" />
+        <input class="slider__radio" type="radio" name="slider" id="slide4" />
+        <input class="slider__radio" type="radio" name="slider" id="slide5" />
+        <input class="slider__radio" type="radio" name="slider" id="slide6" />
 
-        <div class="controls">
+        <div class="slider__controls">
           <label for="slide1"
             ><i class="fa fa-angle-right" aria-hidden="true"></i
           ></label>
@@ -474,15 +480,25 @@
           ></label>
         </div>
 
-        <div class="slides">
-          <div class="overflow">
-            <div class="inner">
-              <div class="slide slide_1"><img src="img/bike04.jpg" /></div>
-              <div class="slide slide_2"><img src="img/bike05.jpg" /></div>
-              <div class="slide slide_3"><img src="img/bike06.jpg" /></div>
-              <div class="slide slide_4"><img src="img/bike04.jpg" /></div>
-              <div class="slide slide_5"><img src="img/bike05.jpg" /></div>
-              <div class="slide slide_6"><img src="img/bike06.jpg" /></div>
+        <div class="slider__overflow">
+          <div class="slider__inner">
+            <div class="slider__slide slide_1">
+              <img src="img/slider/slider-bike-1.jpg" />
+            </div>
+            <div class="slider__slide slide_2">
+              <img src="img/slider/slider-bike-2.jpg" />
+            </div>
+            <div class="slider__slide slide_3">
+              <img src="img/slider/slider-bike-3.jpg" />
+            </div>
+            <div class="slider__slide slide_4">
+              <img src="img/slider/slider-bike-1.jpg" />
+            </div>
+            <div class="slider__slide slide_5">
+              <img src="img/slider/slider-bike-2.jpg" />
+            </div>
+            <div class="slider__slide slide_6">
+              <img src="img/slider/slider-bike-3.jpg" />
             </div>
           </div>
         </div>
@@ -516,30 +532,29 @@
       </section>
     </main>
 
-    <!-- <footer>
-      <section><h2>Подписывайся на нас</h2></section>
-
-      <section>
-        <div>
-          <p>
+    <footer class="footer body_bg_dark">
+      <div class="footer__container">
+        <h2 class="title-h2 footer__title">Подписывайся на нас</h2>
+        <div class="footer__social">
+          <p class="paragraph">
             Не пропусти самое интересное!<br />
             До скорой встречи =)
           </p>
-          <div class="footer-social" id="footer-social">
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"
-              ><i class="fa fa-facebook-square" aria-hidden="true"></i
-            ></a>
-            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <div class="footer__icons">
+            <a href="#"><img src="img/footer/ig-icon.svg" alt="IG" /></a>
+            <a href="#"><img src="img/footer/fb-icon.svg" alt="FB" /></a>
+            <a href="#"><img src="img/footer/vk-icon.svg" alt="VK" /></a>
           </div>
         </div>
-      </section>
 
-      <section class="footer-last">
-        <h4>8 495 922-92-87</h4>
-        <a href="#">Политика конфиденциальности</a>
-        <p>Медведи на мопеде 2023</p>
-      </section>
-    </footer> -->
+        <div class="footer__contacts">
+          <h4 class="title-h4">8 495 922-92-87</h4>
+          <a class="paragraph footer__policy" href="#"
+            >Политика конфиденциальности</a
+          >
+          <p class="paragraph">Медведи на мопеде 2023</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -110,3 +110,13 @@
 @import 'common.blocks/location/location__map.css';
 @import 'desktop.blocks/location/location__container.css';
 @import 'desktop.blocks/location/location__wrapper.css';
+
+@import 'common.blocks/footer/footer.css';
+@import 'common.blocks/footer/footer__container.css';
+@import 'common.blocks/footer/footer__icons.css';
+@import 'common.blocks/footer/footer__social.css';
+@import 'common.blocks/footer/footer__contacts.css';
+@import 'common.blocks/footer/footer__policy.css';
+@import 'desktop.blocks/footer/footer__container.css';
+@import 'desktop.blocks/footer/footer__title.css';
+@import 'desktop.blocks/footer/footer__contacts.css';
