@@ -79,10 +79,10 @@
             type="checkbox"
             id="navigation-toggle"
           />
-          <a class="navigation__item" href="#">Каталог мопедов</a>
-          <a class="navigation__item" href="#">Как арендовать</a>
-          <a class="navigation__item" href="#">Тарифы</a>
-          <a class="navigation__item" href="#">Контакты</a>
+          <a class="navigation__item" href="#catalog__title">Каталог мопедов</a>
+          <a class="navigation__item" href="#how__title">Как арендовать</a>
+          <a class="navigation__item" href="#price__title">Тарифы</a>
+          <a class="navigation__item" href="#footer">Контакты</a>
         </nav>
       </div>
     </header>
@@ -159,7 +159,9 @@
 
       <section class="catalog body_bg_gradient">
         <div class="catalog__container">
-          <h2 class="title-h2 catalog__title">Каталог мопедов</h2>
+          <h2 class="title-h2 catalog__title" id="catalog__title">
+            Каталог мопедов
+          </h2>
           <div class="carousel catalog__carousel">
             <input
               class="carousel__radio"
@@ -331,7 +333,7 @@
       <section class="how body_bg_dark">
         <div class="how__container">
           <div class="how__wrapper">
-            <h2 class="title-h2 how__title">КАК АРЕНДОВАТЬ?</h2>
+            <h2 class="title-h2 how__title" id="how__title">КАК АРЕНДОВАТЬ?</h2>
             <ul class="how__list">
               <li class="how__item">
                 <img src="img/marker.svg" alt="marker" />
@@ -419,7 +421,9 @@
 
       <section class="price body_bg_dark">
         <div class="price__container">
-          <h2 class="title-h2 price__title">тарифы на аренду мопеда</h2>
+          <h2 class="title-h2 price__title" id="price__title">
+            тарифы на аренду мопеда
+          </h2>
           <div class="price__wrapper">
             <article class="price__item">
               <h3 class="title-h3 price__time">1&nbsp;ЧАС</h3>
@@ -575,7 +579,7 @@
       </section>
     </main>
 
-    <footer class="footer body_bg_dark">
+    <footer class="footer body_bg_dark" id="footer">
       <div class="footer__container">
         <h2 class="title-h2 footer__title">Подписывайся на нас</h2>
         <div class="footer__social">
