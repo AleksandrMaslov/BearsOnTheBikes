@@ -101,6 +101,18 @@
 @import 'mobile.blocks/price/price__container.css';
 @import 'mobile.blocks/price/price__item.css';
 
+@import 'common.blocks/slider/slider.css';
+@import 'common.blocks/slider/slider__radio.css';
+@import 'common.blocks/slider/slider__overflow.css';
+@import 'common.blocks/slider/slider__inner.css';
+@import 'common.blocks/slider/slider__controls.css';
+@import 'common.blocks/slider/slider__control.css';
+@import 'common.blocks/slider/slider__arrow.css';
+@import 'mobile.blocks/slider/slider.css';
+@import 'mobile.blocks/slider/slider__slide.css';
+@import 'mobile.blocks/slider/slider__control.css';
+@import 'mobile.blocks/slider/slider__inner.css';
+
 @import 'common.blocks/location/location.css';
 @import 'common.blocks/location/location__container.css';
 @import 'common.blocks/location/location__wrapper.css';
