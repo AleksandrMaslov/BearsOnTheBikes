@@ -29,6 +29,19 @@
 @import 'tablet.blocks/title/title-h4.css';
 @import 'tablet.blocks/title/title-h5.css';
 
+@import 'common.blocks/frame/frame.css';
+@import 'common.blocks/frame/frame__border.css';
+@import 'common.blocks/frame/frame__image.css';
+@import 'tablet.blocks/frame/frame_a.css';
+@import 'tablet.blocks/frame/frame_b.css';
+@import 'tablet.blocks/frame/frame_c.css';
+@import 'tablet.blocks/frame/frame__border_a.css';
+@import 'tablet.blocks/frame/frame__border_b.css';
+@import 'tablet.blocks/frame/frame__border_c.css';
+@import 'tablet.blocks/frame/frame__image_a.css';
+@import 'tablet.blocks/frame/frame__image_b.css';
+@import 'tablet.blocks/frame/frame__image_c.css';
+
 @import 'common.blocks/header/header.css';
 @import 'common.blocks/header/header__navigation-wrap.css';
 @import 'common.blocks/header/header__wrapper.css';
@@ -56,6 +69,7 @@
 @import 'tablet.blocks/rent/rent__container.css';
 
 @import 'common.blocks/reason/reason.css';
+@import 'common.blocks/reason/reason__container.css';
 @import 'common.blocks/reason/reason__item.css';
 @import 'common.blocks/reason/reason__list.css';
 @import 'tablet.blocks/reason/reason__item.css';
@@ -63,6 +77,9 @@
 @import 'tablet.blocks/reason/reason__text-1.css';
 @import 'tablet.blocks/reason/reason__title.css';
 @import 'tablet.blocks/reason/reason__container.css';
+@import 'tablet.blocks/reason/reason__frame-a.css';
+@import 'tablet.blocks/reason/reason__frame-b.css';
+@import 'tablet.blocks/reason/reason__frame-c.css';
 
 @import 'common.blocks/catalog/catalog.css';
 @import 'common.blocks/catalog/catalog__title.css';
