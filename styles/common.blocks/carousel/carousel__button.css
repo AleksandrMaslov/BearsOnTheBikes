@@ -1,4 +1,5 @@
 .carousel__button {
+  flex: 1;
   border-radius: 10px;
   border: 1.4px solid #555;
 

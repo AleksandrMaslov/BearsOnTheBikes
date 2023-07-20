@@ -87,6 +87,7 @@
 
 @import 'common.blocks/carousel/carousel.css';
 @import 'common.blocks/carousel/carousel__radio.css';
+@import 'common.blocks/carousel/carousel__anchor.css';
 @import 'common.blocks/carousel/carousel__button.css';
 @import 'common.blocks/carousel/carousel__bullet.css';
 @import 'common.blocks/carousel/carousel__bullets.css';
@@ -149,3 +150,21 @@
 @import 'desktop.blocks/footer/footer__container.css';
 @import 'desktop.blocks/footer/footer__title.css';
 @import 'desktop.blocks/footer/footer__contacts.css';
+
+@import 'common.blocks/modal/modal.css';
+@import 'common.blocks/modal/modal__overlay.css';
+@import 'common.blocks/modal/modal__window.css';
+@import 'common.blocks/modal/modal__container.css';
+@import 'common.blocks/modal/modal__anchor.css';
+@import 'common.blocks/modal/modal__close.css';
+@import 'common.blocks/modal/modal__form.css';
+@import 'common.blocks/modal/modal__title-wrap.css';
+@import 'common.blocks/modal/modal__input-wrap.css';
+@import 'common.blocks/modal/modal__input.css';
+@import 'common.blocks/modal/modal__button.css';
+@import 'desktop.blocks/modal/modal__button.css';
+@import 'desktop.blocks/modal/modal__form.css';
+@import 'desktop.blocks/modal/modal__input-wrap.css';
+@import 'desktop.blocks/modal/modal__input.css';
+@import 'desktop.blocks/modal/modal__title-wrap.css';
+@import 'desktop.blocks/modal/modal__container.css';

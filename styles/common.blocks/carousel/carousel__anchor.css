@@ -1,0 +1,4 @@
+.carousel__anchor {
+  display: flex;
+  pointer-events: none;
+}
