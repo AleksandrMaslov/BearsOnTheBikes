@@ -1,6 +1,6 @@
-@import url(mobile.css);
-@import url(tablet.css) (min-width: 768px);
-@import url(desktop.css) (min-width: 1440px);
+@import url(styles/mobile.css);
+@import url(styles/tablet.css) (min-width: 768px);
+@import url(styles/desktop.css) (min-width: 1440px);
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'SoyuzGrotesk';
-  src: url('../fonts/SoyuzGroteskBold.otf');
+  src: url('fonts/SoyuzGroteskBold.otf');
   font-weight: bold;
   font-style: normal;
 }
