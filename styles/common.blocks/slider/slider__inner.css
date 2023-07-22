@@ -1,0 +1,11 @@
+.slider__inner {
+  position: relative;
+  display: inline-flex;
+  height: 100%;
+
+  --innter-transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: var(--innter-transition);
+  -moz-transition: var(--innter-transition);
+  -o-transition: var(--innter-transition);
+  transition: var(--innter-transition);
+}

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <title>Медведи на мопеде</title>
+    <meta name="description" content="Услуги аренды ретро мопедов" />
+    <meta name="author" content="Maslov Aleksandr" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
     <!-- FAVICON -->
     <link
       rel="apple-touch-icon"
@@ -22,362 +31,764 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <!-- FAVICON -->
 
-    <title>Медведи на мопеде</title>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SOCIAL MEDIA -->
+    <meta property="og:image" content="img/logo.svg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://aleksandrmaslov.github.io/HTML_CSS_BearsOnTheBikes/"
+    />
+    <meta property="og:title" content="Медведи на мопеде" />
+    <meta property="og:description" content="Услуги аренды ретро мопедов" />
+    <!-- SOCIAL MEDIA -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/background.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/slider-3d.css" />
-    <link rel="stylesheet" href="css/slider-flat.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles/_reset.css" />
+    <link rel="stylesheet" href="styles/_styles.css" />
     <!-- CSS -->
   </head>
 
-  <body>
-    <header>
-      <div class="header-container">
-        <div class="header-logo">
-          <a href="#">
-            <img class="logo" src="img/logo.svg" alt="Logo" />
-            <span class="logo-text">Meдведи на мопеде</span>
-          </a>
+  <body class="body" style="position: relative">
+    <header class="header body_bg_dark">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img class="header__image" src="img/header/logo.svg" alt="Logo" />
+          <span class="header__title">Meдведи на мопеде</span>
+        </a>
+
+        <div class="header__contacts">
+          <p class="paragraph paragraph_semibold header__adress">
+            Большой Сухаревский пер.17, стр.3
+          </p>
+          <h4 class="title-h4 header__phone">8 495 922-92-87</h4>
+          <a href="#modal-call"
+            ><button class="button header__button">Вам позвонить?</button></a
+          >
         </div>
 
-        <div class="header-contacts">
-          <p class="adress">Большой Сухаревский пер.17, стр.3</p>
-          <h4 class="adress">8 495 922-92-87</h4>
-          <button class="request-btn">Вам позвонить?</button>
-        </div>
-
-        <div class="header-burger">
-          <span class="burger-item"></span>
-        </div>
+        <label class="burger header__burger" for="navigation-toggle">
+          <span class="burger__item"></span>
+        </label>
       </div>
 
-      <nav class="nav">
-        <ul type="none">
-          <li class="nav-item"><a href="#main-catalog">Каталог мопедов</a></li>
-          <li class="nav-item"><a href="#main-how">Как арендовать</a></li>
-          <li class="nav-item"><a href="#main-price">Тарифы</a></li>
-          <li class="nav-item"><a href="#footer-social">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="header__navigation-wrap">
+        <nav class="navigation header__navigation">
+          <input
+            class="navigation__toggle"
+            type="checkbox"
+            id="navigation-toggle"
+          />
+          <a class="navigation__item" href="#catalog__title">Каталог мопедов</a>
+          <a class="navigation__item" href="#how__title">Как арендовать</a>
+          <a class="navigation__item" href="#price__title">Тарифы</a>
+          <a class="navigation__item" href="#footer">Контакты</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="main-rent">
-        <h1>Аренда ретро мопедов в Москве</h1>
-        <p>Доступно с правами любой категории</p>
-
-        <button>Арендовать</button>
+    <main class="main">
+      <section class="rent body_bg_dark">
+        <div class="rent__container">
+          <h1 class="title-h1 rent__title">Аренда ретро мопедов в Москве</h1>
+          <h4 class="title-h4 rent__text">
+            Доступно с правами любой категории
+          </h4>
+          <a href="#modal-rent">
+            <button class="button rent__button">Арендовать</button>
+          </a>
+        </div>
       </section>
 
-      <section class="main-imgs-a">
-        <div class="img-overflow">
-          <div class="img-wrapper wrapper-1">
-            <div class="img-frame frame-1"></div>
-            <img class="img img-1" src="img/bike01.jpg" alt="bike01" /><img />
+      <section class="reason body_bg_dark">
+        <div class="reason__container">
+          <div class="frame frame_a reason__frame-a">
+            <div class="frame__border frame__border_a"></div>
+            <img
+              class="frame__image frame__image_a"
+              src="img/reason/bike-a.jpg"
+              alt="bike-a"
+            />
           </div>
 
-          <div class="img-wrapper wrapper-2">
-            <div class="img-frame frame-2"></div>
-            <img class="img img-2" src="img/bike02.jpg" alt="bike02" />
+          <div class="frame frame_b reason__frame-b">
+            <div class="frame__border frame__border_b"></div>
+            <img
+              class="frame__image frame__image_b"
+              src="img/reason/bike-b.jpg"
+              alt="bike-b"
+            />
+          </div>
+
+          <ul class="reason__list">
+            <li class="reason__item">
+              <img src="img/marker.svg" alt="marker" />
+              <h4 class="title-h4">Яркое катание с друзьями</h4>
+            </li>
+            <li class="reason__item">
+              <img src="img/marker.svg" alt="marker" />
+              <h4 class="title-h4">Незабываемое свидание</h4>
+            </li>
+            <li class="reason__item">
+              <img src="img/marker.svg" alt="marker" />
+              <h4 class="title-h4">Сочная фотосессия</h4>
+            </li>
+          </ul>
+
+          <h2 class="title-h2 reason__title">
+            Почему выгодно арендовать мопед?
+          </h2>
+          <p class="paragraph reason__text-1">
+            Жарким летом в большом городе именно юркий скутер сэкономит массу
+            времени и здоровья – в пробках стоять не надо, дышать выхлопами
+            придется гораздо меньше чем с кондиционером. Приютиться на забитой
+            парковке не проблема, как и выехать с нее. А у молодежи сейчас в
+            моде покатушки – можно арендовать сразу несколько «лошадок» и
+            отправиться куда-нибудь группой друзей. Взять мопед в аренду намного
+            дешевле, чем легковую машину. Или всякий раз вызывать такси.
+          </p>
+          <p class="paragraph reason__text-2">
+            Достаточно предъявить паспорт и оплатить скромный аванс за
+            пользование, подписать договор аренды – и уехать по своим делам на
+            исправной, чистенькой двухколесной машинке. Если времени не хватит,
+            договор можно продлить.
+          </p>
+
+          <div class="frame frame_c reason__frame-c">
+            <div class="frame__border frame__border_c"></div>
+            <img
+              class="frame__image frame__image_c"
+              src="img/reason/bike-c.jpg"
+              alt="bike-c"
+            />
           </div>
         </div>
       </section>
 
-      <section class="main-reason">
-        <ul type="none">
-          <li>Яркое катание с друзьями</li>
-          <li>Незабываемое свидание</li>
-          <li>Сочная фотосессия</li>
-        </ul>
+      <section class="catalog body_bg_gradient">
+        <div class="catalog__container">
+          <h2 class="title-h2 catalog__title" id="catalog__title">
+            Каталог мопедов
+          </h2>
+          <div class="carousel catalog__carousel">
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-1"
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-2"
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-3"
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-4"
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-5"
+              checked
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-6"
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-7"
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-8"
+            />
+            <input
+              class="carousel__radio"
+              type="radio"
+              name="carousel"
+              id="carousel__slide-9"
+            />
 
-        <h2>Почему выгодно арендовать мопед?</h2>
-        <p>
-          Жарким летом в большом городе именно юркий скутер сэкономит массу
-          времени и здоровья – в пробках стоять не надо, дышать выхлопами
-          придется гораздо меньше чем с кондиционером. Приютиться на забитой
-          парковке не проблема, как и выехать с нее. А у молодежи сейчас в моде
-          покатушки – можно арендовать сразу несколько «лошадок» и отправиться
-          куда-нибудь группой друзей. Взять мопед в аренду намного дешевле, чем
-          легковую машину. Или всякий раз вызывать такси.
-        </p>
-        <p>
-          Достаточно предъявить паспорт и оплатить скромный аванс за
-          пользование, подписать договор аренды – и уехать по своим делам на
-          исправной, чистенькой двухколесной машинке. Если времени не хватит,
-          договор можно продлить.
-        </p>
-      </section>
+            <div class="carousel__overflow">
+              <div class="carousel__inner">
+                <label for="carousel__slide-1" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Blue</h5>
+                  <img
+                    src="img/catalog/carousel-bike-blue.jpg"
+                    alt="bike-blue"
+                  />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a>
+                </label>
+                <label for="carousel__slide-2" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Green</h5>
+                  <img
+                    src="img/catalog/carousel-bike-green.jpg"
+                    alt="bike-green"
+                  />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a>
+                </label>
+                <label for="carousel__slide-3" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Milk</h5>
+                  <img
+                    src="img/catalog/carousel-bike-milk.jpg"
+                    alt="bike-milk"
+                  />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a>
+                </label>
+                <label for="carousel__slide-4" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Red</h5>
+                  <img src="img/catalog/carousel-bike-red.jpg" alt="bike-red" />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a></label
+                >
+                <label for="carousel__slide-5" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Yellow</h5>
+                  <img
+                    src="img/catalog/carousel-bike-yellow.jpg"
+                    alt="bike-yellow"
+                  />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a></label
+                >
+                <label for="carousel__slide-6" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Green</h5>
+                  <img
+                    src="img/catalog/carousel-bike-green.jpg"
+                    alt="bike-green"
+                  />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a></label
+                >
+                <label for="carousel__slide-7" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Milk</h5>
+                  <img
+                    src="img/catalog/carousel-bike-milk.jpg"
+                    alt="bike-milk"
+                  />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a></label
+                >
+                <label for="carousel__slide-8" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Red</h5>
+                  <img src="img/catalog/carousel-bike-red.jpg" alt="bike-red" />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a></label
+                >
+                <label for="carousel__slide-9" class="carousel__slide">
+                  <h5 class="title-h5">Honda Giorno Blue</h5>
+                  <img
+                    src="img/catalog/carousel-bike-blue.jpg"
+                    alt="bike-blue"
+                  />
+                  <a class="carousel__anchor" href="#modal-rent">
+                    <button class="button carousel__button">Арендовать</button>
+                  </a></label
+                >
+              </div>
+            </div>
 
-      <section class="main-imgs-b">
-        <div class="img-wrapper wrapper-3">
-          <div class="img-frame frame-3"></div>
-          <img class="img img-3" src="img/bike03.jpg" alt="bike03" />
-        </div>
-      </section>
-
-      <section class="main-catalog">
-        <h2 id="main-catalog">Каталог мопедов</h2>
-        <div class="catalog-slider">
-          <input type="radio" name="catalog" id="slide_1" />
-          <input type="radio" name="catalog" id="slide_2" />
-          <input type="radio" name="catalog" id="slide_3" />
-          <input type="radio" name="catalog" id="slide_4" />
-          <input type="radio" name="catalog" id="slide_5" checked />
-          <input type="radio" name="catalog" id="slide_6" />
-          <input type="radio" name="catalog" id="slide_7" />
-          <input type="radio" name="catalog" id="slide_8" />
-          <input type="radio" name="catalog" id="slide_9" />
-
-          <div class="catalog-overflow">
-            <div class="catalog-inner">
-              <label for="slide_1" class="slide">
-                <h5>Honda Giorno Blue</h5>
-                <img src="img/bike-blue.jpg" alt="bike-blue" />
-                <button>Арендовать</button>
-              </label>
-              <label for="slide_2" class="slide">
-                <h5>Honda Giorno Green</h5>
-                <img src="img/bike-green.jpg" alt="bike-green" />
-                <button>Арендовать</button>
-              </label>
-              <label for="slide_3" class="slide">
-                <h5>Honda Giorno Milk</h5>
-                <img src="img/bike-milk.jpg" alt="bike-milk" />
-                <button>Арендовать</button>
-              </label>
-              <label for="slide_4" class="slide">
-                <h5>Honda Giorno Red</h5>
-                <img src="img/bike-red.jpg" alt="bike-red" />
-                <button>Арендовать</button></label
-              >
-              <label for="slide_5" class="slide">
-                <h5>Honda Giorno Yellow</h5>
-                <img src="img/bike-yellow.jpg" alt="bike-yellow" /><button>
-                  Арендовать
-                </button></label
-              >
-              <label for="slide_6" class="slide">
-                <h5>Honda Giorno Green</h5>
-                <img src="img/bike-green.jpg" alt="bike-green" /><button>
-                  Арендовать
-                </button></label
-              >
-              <label for="slide_7" class="slide">
-                <h5>Honda Giorno Milk</h5>
-                <img src="img/bike-milk.jpg" alt="bike-milk" /><button>
-                  Арендовать
-                </button></label
-              >
-              <label for="slide_8" class="slide">
-                <h5>Honda Giorno Red</h5>
-                <img src="img/bike-red.jpg" alt="bike-red" /><button>
-                  Арендовать
-                </button></label
-              >
-              <label for="slide_9" class="slide">
-                <h5>Honda Giorno Blue</h5>
-                <img src="img/bike-blue.jpg" alt="bike-blue" /><button>
-                  Арендовать
-                </button></label
-              >
+            <div class="carousel__bullets">
+              <label for="carousel__slide-1" class="carousel__bullet"></label>
+              <label for="carousel__slide-2" class="carousel__bullet"></label>
+              <label for="carousel__slide-3" class="carousel__bullet"></label>
+              <label for="carousel__slide-4" class="carousel__bullet"></label>
+              <label for="carousel__slide-5" class="carousel__bullet"></label>
+              <label for="carousel__slide-6" class="carousel__bullet"></label>
+              <label for="carousel__slide-7" class="carousel__bullet"></label>
+              <label for="carousel__slide-8" class="carousel__bullet"></label>
+              <label for="carousel__slide-9" class="carousel__bullet"></label>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="catalog-bullets">
-            <label for="slide_1" class="bullet"></label>
-            <label for="slide_2" class="bullet"></label>
-            <label for="slide_3" class="bullet"></label>
-            <label for="slide_4" class="bullet"></label>
-            <label for="slide_5" class="bullet"></label>
-            <label for="slide_6" class="bullet"></label>
-            <label for="slide_7" class="bullet"></label>
-            <label for="slide_8" class="bullet"></label>
-            <label for="slide_9" class="bullet"></label>
+      <section class="security body_bg_light">
+        <div class="security__container">
+          <h2 class="title-h2">Полная уверенность<br />в&nbsp;надежности</h2>
+          <p class="paragraph">
+            Каждый мопед, перед тем как Вы возьмёте его в аренду, в обязательном
+            порядке проходит осмотр и необходимую подготовку у наших механиков.
+            И на всём протяжении своей поездки, Вы можете быть полностью
+            уверенны в надёжности нашей техники : полный бак масла, накачанные
+            шины, исправная электрика, двигатель и тормозная система. Помимо
+            этого, в каждый прокатный комплект входит шлем и парковочный трос,
+            что сделает Ваш отдых безопасным как на дороге, так и на стоянке.
+          </p>
+        </div>
+      </section>
+
+      <section class="how body_bg_dark">
+        <div class="how__container">
+          <div class="how__wrapper">
+            <h2 class="title-h2 how__title" id="how__title">КАК АРЕНДОВАТЬ?</h2>
+            <ul class="how__list">
+              <li class="how__item">
+                <img src="img/marker.svg" alt="marker" />
+                <p class="paragraph">
+                  Нажимаете на сайте кнопку "Арендовать" или звоните нам
+                </p>
+              </li>
+              <li class="how__item">
+                <img src="img/marker.svg" alt="marker" />
+                <p class="paragraph">
+                  Указываете в форме имя, время, дату аренды и свои пожелания
+                </p>
+              </li>
+              <li class="how__item">
+                <img src="img/marker.svg" alt="marker" />
+                <p class="paragraph">
+                  Приезжаете на место с паспортом и правами любой категории
+                </p>
+              </li>
+              <li class="how__item">
+                <img src="img/marker.svg" alt="marker" />
+                <p class="paragraph">
+                  Оставляете под залог документ удостоверяющий личность и 5000₽
+                </p>
+              </li>
+              <li class="how__item">
+                <img src="img/marker.svg" alt="marker" />
+                <p class="paragraph">
+                  Подписываете договор аренды, берете мопед и едете кататься
+                </p>
+              </li>
+            </ul>
+            <p class="paragraph">В комплект входит шлем и дождевик</p>
+          </div>
+
+          <div class="how__grid">
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
+            <img
+              class="how__logo"
+              src="img/how/logo-bike.png"
+              alt="logo-bike"
+            />
           </div>
         </div>
       </section>
 
-      <section class="main-security">
-        <h2>Полная уверенность<br />в&nbsp;надежности</h2>
-        <p>
-          Каждый мопед, перед тем как Вы возьмёте его в аренду, в обязательном
-          порядке проходит осмотр и необходимую подготовку у наших механиков. И
-          на всём протяжении своей поездки, Вы можете быть полностью уверенны в
-          надёжности нашей техники : полный бак масла, накачанные шины,
-          исправная электрика, двигатель и тормозная система. Помимо этого, в
-          каждый прокатный комплект входит шлем и парковочный трос, что сделает
-          Ваш отдых безопасным как на дороге, так и на стоянке.
-        </p>
-      </section>
-
-      <section class="main-how" id="main-how">
-        <div class="logo-grid">
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-          <img class="bike-logo" src="img/logo-bike.png" alt="logo-bike" />
-        </div>
-
-        <h2>КАК АРЕНДОВАТЬ?</h2>
-        <ul type="none">
-          <li>Нажимаете на сайте кнопку "Арендовать" или звоните нам</li>
-          <li>Указываете в форме имя, время, дату аренды и свои пожелания</li>
-          <li>Приезжаете на место с паспортом и правами любой категории</li>
-          <li>Оставляете под залог документ удостоверяющий личность и 5000₽</li>
-          <li>Подписываете договор аренды, берете мопед и едете кататься</li>
-        </ul>
-        <p>В комплект входит шлем и дождевик</p>
-      </section>
-
-      <section class="main-price" id="main-price">
-        <h2>тарифы на аренду мопеда</h2>
-        <div>
-          <article>
-            <h3>1&nbsp;ЧАС</h3>
-            <p>700&nbsp;₽</p>
-          </article>
-          <article>
-            <h3>2&nbsp;ЧАСА</h3>
-            <p>1200&nbsp;₽</p>
-          </article>
-          <article id="main-price-third">
-            <h3>6&nbsp;ЧАСОВ</h3>
-            <p>1500&nbsp;₽</p>
-          </article>
-          <article>
-            <h3>12&nbsp;ЧАСОВ</h3>
-            <p>2000&nbsp;₽</p>
-          </article>
-          <article id="main-price-last">
-            <h3>24&nbsp;ЧАСА</h3>
-            <p>3000&nbsp;₽</p>
-          </article>
+      <section class="price body_bg_dark">
+        <div class="price__container">
+          <h2 class="title-h2 price__title" id="price__title">
+            тарифы на аренду мопеда
+          </h2>
+          <div class="price__wrapper">
+            <article class="price__item">
+              <h3 class="title-h3 price__time">1&nbsp;ЧАС</h3>
+              <p class="paragraph">700&nbsp;₽</p>
+            </article>
+            <article class="price__item">
+              <h3 class="title-h3 price__time">2&nbsp;ЧАСА</h3>
+              <p class="paragraph">1200&nbsp;₽</p>
+            </article>
+            <article class="price__item">
+              <h3 class="title-h3 price__time">6&nbsp;ЧАСОВ</h3>
+              <p class="paragraph">1500&nbsp;₽</p>
+            </article>
+            <article class="price__item">
+              <h3 class="title-h3 price__time">12&nbsp;ЧАСОВ</h3>
+              <p class="paragraph">2000&nbsp;₽</p>
+            </article>
+            <article class="price__item">
+              <h3 class="title-h3 price__time">24&nbsp;ЧАСА</h3>
+              <p class="paragraph">3000&nbsp;₽</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="main-carousel">
-        <input type="radio" name="slider" id="slide1" checked />
-        <input type="radio" name="slider" id="slide2" />
-        <input type="radio" name="slider" id="slide3" />
-        <input type="radio" name="slider" id="slide4" />
-        <input type="radio" name="slider" id="slide5" />
-        <input type="radio" name="slider" id="slide6" />
+      <section class="slider">
+        <input
+          class="slider__radio"
+          type="radio"
+          name="slider"
+          id="slider__slide-1"
+          checked
+        />
+        <input
+          class="slider__radio"
+          type="radio"
+          name="slider"
+          id="slider__slide-2"
+        />
+        <input
+          class="slider__radio"
+          type="radio"
+          name="slider"
+          id="slider__slide-3"
+        />
+        <input
+          class="slider__radio"
+          type="radio"
+          name="slider"
+          id="slider__slide-4"
+        />
+        <input
+          class="slider__radio"
+          type="radio"
+          name="slider"
+          id="slider__slide-5"
+        />
+        <input
+          class="slider__radio"
+          type="radio"
+          name="slider"
+          id="slider__slide-6"
+        />
 
-        <div class="controls">
-          <label for="slide1"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></label>
-          <label for="slide2"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></label>
-          <label for="slide3"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></label>
-          <label for="slide4"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></label>
-          <label for="slide5"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></label>
-          <label for="slide6"
-            ><i class="fa fa-angle-right" aria-hidden="true"></i
-          ></label>
+        <div class="slider__controls">
+          <label class="slider__control" for="slider__slide-1"
+            ><img
+              class="slider__arrow"
+              src="img/slider/arrow-next.svg"
+              alt="next"
+          /></label>
+          <label class="slider__control" for="slider__slide-2"
+            ><img
+              class="slider__arrow"
+              src="img/slider/arrow-next.svg"
+              alt="next"
+          /></label>
+          <label class="slider__control" for="slider__slide-3"
+            ><img
+              class="slider__arrow"
+              src="img/slider/arrow-next.svg"
+              alt="next"
+          /></label>
+          <label class="slider__control" for="slider__slide-4"
+            ><img
+              class="slider__arrow"
+              src="img/slider/arrow-next.svg"
+              alt="next"
+          /></label>
+          <label class="slider__control" for="slider__slide-5"
+            ><img
+              class="slider__arrow"
+              src="img/slider/arrow-next.svg"
+              alt="next"
+          /></label>
+          <label class="slider__control" for="slider__slide-6"
+            ><img
+              class="slider__arrow"
+              src="img/slider/arrow-next.svg"
+              alt="next"
+          /></label>
         </div>
 
-        <div class="slides">
-          <div class="overflow">
-            <div class="inner">
-              <div class="slide slide_1"><img src="img/bike04.jpg" /></div>
-              <div class="slide slide_2"><img src="img/bike05.jpg" /></div>
-              <div class="slide slide_3"><img src="img/bike06.jpg" /></div>
-              <div class="slide slide_4"><img src="img/bike04.jpg" /></div>
-              <div class="slide slide_5"><img src="img/bike05.jpg" /></div>
-              <div class="slide slide_6"><img src="img/bike06.jpg" /></div>
+        <div class="slider__overflow">
+          <div class="slider__inner">
+            <div class="slider__slide">
+              <img src="img/slider/slider-bike-1.jpg" />
+            </div>
+            <div class="slider__slide">
+              <img src="img/slider/slider-bike-2.jpg" />
+            </div>
+            <div class="slider__slide">
+              <img src="img/slider/slider-bike-3.jpg" />
+            </div>
+            <div class="slider__slide">
+              <img src="img/slider/slider-bike-1.jpg" />
+            </div>
+            <div class="slider__slide">
+              <img src="img/slider/slider-bike-2.jpg" />
+            </div>
+            <div class="slider__slide">
+              <img src="img/slider/slider-bike-3.jpg" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="main-location">
-        <div>
-          <h2>Где мы находимся</h2>
-          <p>
-            г. Москва, Большой Сухаревский пер.17, с.3 Мы работаем с 10.00 до
-            22.00 без выходных
-          </p>
-          <p>
-            Удобное расположение в центре Москвы. Есть возможность заказать
-            доставку мопеда по Москве за дополнительную оплату 500₽. Стоимость
-            доставка за МКАД обсуждается индивидуально в зависимости от
-            расстояния. По завершению аренды, мы можем забрать мопед по
-            аналогичной стоимости.
-          </p>
-        </div>
+      <section class="location body_bg_light">
+        <div class="location__container">
+          <div class="location__wrapper">
+            <h2 class="title-h2 location__title" id="location__title">
+              Где мы находимся
+            </h2>
+            <p class="paragraph paragraph_semibold location__adress">
+              г. Москва, Большой Сухаревский пер.17, с.3. Мы работаем с 10.00 до
+              22.00 без выходных.
+            </p>
+            <p class="paragraph location__description">
+              Удобное расположение в центре Москвы. Есть возможность заказать
+              доставку мопеда по Москве за дополнительную оплату 500₽. Стоимость
+              доставка за МКАД обсуждается индивидуально в зависимости от
+              расстояния. По завершению аренды, мы можем забрать мопед по
+              аналогичной стоимости.
+            </p>
+          </div>
 
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.285510789748!2d37.626434176551435!3d55.770912990596415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54961ad3a0835%3A0xbe3afa876a4c3033!2sMedvedi%20Na%20Mopede!5e0!3m2!1sen!2sge!4v1687121998086!5m2!1sen!2sge"
-          style="border: 0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
-        ></iframe>
+          <iframe
+            class="location__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.285510789748!2d37.626434176551435!3d55.770912990596415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54961ad3a0835%3A0xbe3afa876a4c3033!2sMedvedi%20Na%20Mopede!5e0!3m2!1sen!2sge!4v1687121998086!5m2!1sen!2sge"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <section><h2>Подписывайся на нас</h2></section>
-
-      <section>
-        <div>
-          <p>
+    <footer class="footer body_bg_dark" id="footer">
+      <div class="footer__container">
+        <h2 class="title-h2 footer__title">Подписывайся на нас</h2>
+        <div class="footer__social">
+          <p class="paragraph">
             Не пропусти самое интересное!<br />
             До скорой встречи =)
           </p>
-          <div class="footer-social" id="footer-social">
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"
-              ><i class="fa fa-facebook-square" aria-hidden="true"></i
-            ></a>
-            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <div class="footer__icons">
+            <a href="#"><img src="img/footer/ig-icon.svg" alt="IG" /></a>
+            <a href="#"><img src="img/footer/fb-icon.svg" alt="FB" /></a>
+            <a href="#"><img src="img/footer/vk-icon.svg" alt="VK" /></a>
           </div>
         </div>
-      </section>
 
-      <section class="footer-last">
-        <h4>8 495 922-92-87</h4>
-        <a href="#">Политика конфиденциальности</a>
-        <p>Медведи на мопеде 2023</p>
-      </section>
+        <div class="footer__contacts">
+          <h4 class="title-h4">8 495 922-92-87</h4>
+          <a class="paragraph footer__policy" href="#"
+            >Политика конфиденциальности</a
+          >
+          <p class="paragraph">Медведи на мопеде 2023</p>
+        </div>
+      </div>
     </footer>
 
-    <script>
-      document
-        .querySelector('.header-burger')
-        .addEventListener('click', function () {
-          this.classList.toggle('opened')
-          document.querySelector('.nav').classList.toggle('opened')
-        })
+    <div class="modal" id="modal-call">
+      <div class="modal__overlay">
+        <div class="modal__window body_bg_light">
+          <div class="modal__container">
+            <a class="modal__anchor" href="#"
+              ><button class="modal__close">&times;</button></a
+            >
+            <form
+              class="modal__form"
+              method="get"
+              action="/index.html"
+              autocomplete="on"
+            >
+              <div class="modal__title-wrap">
+                <h2 class="title-h2">Перезвоните мне</h2>
+                <p class="paragraph">Аренда мопеда от 700 р за час.</p>
+              </div>
+              <div class="modal__input-wrap">
+                <label class="paragraph paragraph_semibold" for="login-call"
+                  >Как Вас зовут</label
+                >
+                <input
+                  class="paragraph modal__input"
+                  type="text"
+                  id="login-call"
+                  name="login"
+                  placeholder="Имя"
+                  required
+                />
+              </div>
+              <div class="modal__input-wrap">
+                <label class="paragraph" for="tel-call">Ваш телефон</label>
+                <input
+                  class="paragraph modal__input"
+                  type="tel"
+                  id="tel-call"
+                  name="phone"
+                  placeholder="+7 ___ ___ __ __"
+                  required
+                />
+              </div>
+              <a href="#modal-call-registred">
+                <input
+                  class="button modal__button"
+                  type="button"
+                  value="Отправить заявку"
+                />
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      document.querySelectorAll('.nav-item').forEach((element) => {
-        element.addEventListener('click', function () {
-          document.querySelector('.header-burger').classList.remove('opened')
-          document.querySelector('.nav').classList.remove('opened')
-        })
-      })
-    </script>
+    <div class="modal" id="modal-call-registred">
+      <div class="modal__overlay">
+        <div class="modal__window body_bg_light">
+          <div class="modal__container">
+            <a class="modal__anchor" href="#"
+              ><button class="modal__close">&times;</button></a
+            >
+            <div class="modal__form">
+              <div class="modal__title-wrap">
+                <h2 class="title-h2">Данные успешно отправлены!</h2>
+                <p class="paragraph">Аренда мопеда от 700 р за час.</p>
+              </div>
+              <a href="#how__title">
+                <button class="button modal__button">До связи!</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-rent">
+      <div class="modal__overlay">
+        <div class="modal__window body_bg_light">
+          <div class="modal__container">
+            <a class="modal__anchor" href="#"
+              ><button class="modal__close">&times;</button></a
+            >
+            <form
+              class="modal__form"
+              method="get"
+              action="/index.html"
+              autocomplete="on"
+            >
+              <div class="modal__title-wrap">
+                <h2 class="title-h2">Арендовать мопед</h2>
+                <p class="paragraph">Аренда мопеда от 700 р за час.</p>
+              </div>
+              <div class="modal__input-wrap">
+                <label class="paragraph paragraph_semibold" for="login-rent"
+                  >Как Вас зовут</label
+                >
+                <input
+                  class="paragraph modal__input"
+                  type="text"
+                  id="login-rent"
+                  name="login"
+                  placeholder="Имя"
+                  required
+                />
+              </div>
+              <div class="modal__input-wrap">
+                <label class="paragraph" for="tel-rent">Ваш телефон</label>
+                <input
+                  class="paragraph modal__input"
+                  type="tel"
+                  id="tel-rent"
+                  name="phone"
+                  placeholder="+7 ___ ___ __ __"
+                  required
+                />
+              </div>
+              <div class="modal__input-wrap">
+                <label class="paragraph" for="datetime-rent"
+                  >Укажите дату и время аренды</label
+                >
+                <input
+                  class="paragraph modal__input"
+                  type="datetime-local"
+                  id="datetime-rent"
+                  name="datetime"
+                  required
+                />
+              </div>
+              <a href="#modal-rent-registred">
+                <input
+                  class="button modal__button"
+                  type="button"
+                  value="Отправить заявку"
+                />
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-rent-registred">
+      <div class="modal__overlay">
+        <div class="modal__window body_bg_light">
+          <div class="modal__container">
+            <a class="modal__anchor" href="#"
+              ><button class="modal__close">&times;</button></a
+            >
+            <div class="modal__form">
+              <div class="modal__title-wrap">
+                <h2 class="title-h2">Ваш мопед уже ждет Вас!</h2>
+                <p class="paragraph">
+                  В течение 15 минут мы с Вами свяжемся, чтобы подтвердить
+                  аренду и уточнить детали.
+                </p>
+              </div>
+              <a href="#location__title"
+                ><button class="button modal__button">
+                  До скорой встречи
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

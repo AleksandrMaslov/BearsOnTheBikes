@@ -1,0 +1,12 @@
+#slider__slide-1:checked ~ .slider__overflow .slider__inner {
+  left: 0;
+}
+#slider__slide-2:checked ~ .slider__overflow .slider__inner {
+  left: -33.33%;
+}
+#slider__slide-3:checked ~ .slider__overflow .slider__inner {
+  left: -66.66%;
+}
+#slider__slide-4:checked ~ .slider__overflow .slider__inner {
+  left: -100%;
+}

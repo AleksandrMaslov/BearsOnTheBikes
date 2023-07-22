@@ -1,0 +1,6 @@
+.carousel__slide {
+  gap: 15px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 25px 14.5px rgba(0, 0, 0, 0.09);
+}
