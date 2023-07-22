@@ -1,5 +1,6 @@
 .reason__list {
-  /* margin-top: 445px; */
-  margin-bottom: 80px;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
   gap: 10px;
 }

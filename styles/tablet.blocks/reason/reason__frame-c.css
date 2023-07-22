@@ -1,4 +1,6 @@
 .reason__frame-c {
-  margin-top: 80px;
-  margin-left: 375px;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  margin: 0;
 }
