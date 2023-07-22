@@ -54,6 +54,7 @@
 @import 'tablet.blocks/header/header__wrapper.css';
 @import 'tablet.blocks/header/header__navigation-wrap.css';
 @import 'tablet.blocks/header/header__logo.css';
+@import 'tablet.blocks/header/header__logo-image.css';
 @import 'tablet.blocks/header/header__title.css';
 @import 'tablet.blocks/header/header__adress.css';
 @import 'tablet.blocks/header/header__phone.css';
