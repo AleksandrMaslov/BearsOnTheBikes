@@ -81,9 +81,9 @@
             type="checkbox"
             id="navigation-toggle"
           />
-          <a class="navigation__item" href="#catalog__title">Каталог мопедов</a>
-          <a class="navigation__item" href="#how__title">Как арендовать</a>
-          <a class="navigation__item" href="#price__title">Тарифы</a>
+          <a class="navigation__item" href="#catalog">Каталог мопедов</a>
+          <a class="navigation__item" href="#how">Как арендовать</a>
+          <a class="navigation__item" href="#price">Тарифы</a>
           <a class="navigation__item" href="#footer">Контакты</a>
         </nav>
       </div>
@@ -167,11 +167,9 @@
         </div>
       </section>
 
-      <section class="catalog body_bg_gradient">
+      <section class="catalog body_bg_gradient" id="catalog">
         <div class="catalog__container">
-          <h2 class="title-h2 catalog__title" id="catalog__title">
-            Каталог мопедов
-          </h2>
+          <h2 class="title-h2 catalog__title">Каталог мопедов</h2>
           <div class="carousel catalog__carousel">
             <input
               class="carousel__radio"
@@ -348,10 +346,10 @@
         </div>
       </section>
 
-      <section class="how body_bg_dark">
+      <section class="how body_bg_dark" id="how">
         <div class="how__container">
           <div class="how__wrapper">
-            <h2 class="title-h2 how__title" id="how__title">КАК АРЕНДОВАТЬ?</h2>
+            <h2 class="title-h2 how__title">КАК АРЕНДОВАТЬ?</h2>
             <ul class="how__list">
               <li class="how__item">
                 <img src="img/marker.svg" alt="marker" />
@@ -437,11 +435,9 @@
         </div>
       </section>
 
-      <section class="price body_bg_dark">
+      <section class="price body_bg_dark" id="price">
         <div class="price__container">
-          <h2 class="title-h2 price__title" id="price__title">
-            тарифы на аренду мопеда
-          </h2>
+          <h2 class="title-h2 price__title">тарифы на аренду мопеда</h2>
           <div class="price__wrapper">
             <article class="price__item">
               <h3 class="title-h3 price__time">1&nbsp;ЧАС</h3>
@@ -569,12 +565,10 @@
         </div>
       </section>
 
-      <section class="location body_bg_light">
+      <section class="location body_bg_light" id="location">
         <div class="location__container">
           <div class="location__wrapper">
-            <h2 class="title-h2 location__title" id="location__title">
-              Где мы находимся
-            </h2>
+            <h2 class="title-h2 location__title">Где мы находимся</h2>
             <p class="paragraph paragraph_semibold location__adress">
               г. Москва, Большой Сухаревский пер.17, с.3. Мы работаем с 10.00 до
               22.00 без выходных.
@@ -690,7 +684,7 @@
                 <h2 class="title-h2">Данные успешно отправлены!</h2>
                 <p class="paragraph">Аренда мопеда от 700 р за час.</p>
               </div>
-              <a href="#how__title">
+              <a href="#how">
                 <button class="button modal__button">До связи!</button>
               </a>
             </div>
@@ -780,7 +774,7 @@
                   аренду и уточнить детали.
                 </p>
               </div>
-              <a href="#location__title"
+              <a href="#location"
                 ><button class="button modal__button">
                   До скорой встречи
                 </button></a
