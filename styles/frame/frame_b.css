@@ -1,0 +1,16 @@
+.frame_b {
+  width: 230px;
+  height: 340px;
+}
+@media (min-width: 768px) {
+  .frame_b {
+    width: 265px;
+    height: 370px;
+  }
+}
+@media (min-width: 1440px) {
+  .frame_b {
+    width: 470px;
+    height: 680px;
+  }
+}

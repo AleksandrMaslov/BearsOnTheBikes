@@ -1,0 +1,8 @@
+.catalog__container {
+  margin: 80px 0;
+}
+@media (min-width: 1440px) {
+  .catalog__container {
+    margin: 160px 0;
+  }
+}

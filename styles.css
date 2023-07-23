@@ -22,6 +22,31 @@
 @import 'styles/carousel/carousel__radio.css';
 @import 'styles/carousel/carousel__slide.css';
 
+@import 'styles/catalog/catalog.css';
+@import 'styles/catalog/catalog__container.css';
+@import 'styles/catalog/catalog__title.css';
+
+@import 'styles/footer/footer.css';
+@import 'styles/footer/footer__contacts.css';
+@import 'styles/footer/footer__container.css';
+@import 'styles/footer/footer__icons.css';
+@import 'styles/footer/footer__policy.css';
+@import 'styles/footer/footer__social.css';
+@import 'styles/footer/footer__title.css';
+
+@import 'styles/frame/frame.css';
+@import 'styles/frame/frame__border.css';
+@import 'styles/frame/frame__border_a.css';
+@import 'styles/frame/frame__border_b.css';
+@import 'styles/frame/frame__border_c.css';
+@import 'styles/frame/frame__image.css';
+@import 'styles/frame/frame__image_a.css';
+@import 'styles/frame/frame__image_b.css';
+@import 'styles/frame/frame__image_c.css';
+@import 'styles/frame/frame_a.css';
+@import 'styles/frame/frame_b.css';
+@import 'styles/frame/frame_c.css';
+
 @font-face {
   font-family: 'SoyuzGrotesk';
   src: url('fonts/SoyuzGroteskBold.otf');
