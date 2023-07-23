@@ -1,0 +1,16 @@
+.reason__frame-b {
+  position: absolute;
+  right: -35px;
+}
+@media (min-width: 768px) {
+  .reason__frame-b {
+    top: 180px;
+    right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .reason__frame-b {
+    left: 535px;
+    top: -580px;
+  }
+}

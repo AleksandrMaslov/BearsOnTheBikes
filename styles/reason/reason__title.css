@@ -1,0 +1,15 @@
+.reason__title {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .reason__title {
+    margin-top: 630px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .reason__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}

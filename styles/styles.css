@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import 'body/body.css';
+@import 'body/body_bg_dark.css';
+@import 'body/body_bg_light.css';
+@import 'body/body_bg_gradient.css';
+
+@import 'main/main.css';
+
+@import 'paragraph/paragraph.css';
+@import 'paragraph/paragraph_semibold.css';
+
+@import 'title/title-h1.css';
+@import 'title/title-h2.css';
+@import 'title/title-h3.css';
+@import 'title/title-h4.css';
+@import 'title/title-h5.css';
+
+@import 'burger/burger.css';
+@import 'burger/burger__item.css';
+
+@import 'button/button.css';
+
+@import 'navigation/navigation.css';
+@import 'navigation/navigation__item.css';
+@import 'navigation/navigation__toggle.css';
+
+@import 'modal/modal.css';
+@import 'modal/modal__anchor.css';
+@import 'modal/modal__button.css';
+@import 'modal/modal__close.css';
+@import 'modal/modal__container.css';
+@import 'modal/modal__form.css';
+@import 'modal/modal__input-wrap.css';
+@import 'modal/modal__input.css';
+@import 'modal/modal__overlay.css';
+@import 'modal/modal__title-wrap.css';
+@import 'modal/modal__window.css';
+
+@import 'catalog/catalog.css';
+@import 'catalog/catalog__container.css';
+@import 'catalog/catalog__title.css';
+
+@import 'carousel/carousel.css';
+@import 'carousel/carousel__anchor.css';
+@import 'carousel/carousel__bullet.css';
+@import 'carousel/carousel__bullets.css';
+@import 'carousel/carousel__button.css';
+@import 'carousel/carousel__inner.css';
+@import 'carousel/carousel__overflow.css';
+@import 'carousel/carousel__radio.css';
+@import 'carousel/carousel__slide.css';
+
+@import 'footer/footer.css';
+@import 'footer/footer__contacts.css';
+@import 'footer/footer__container.css';
+@import 'footer/footer__icons.css';
+@import 'footer/footer__policy.css';
+@import 'footer/footer__social.css';
+@import 'footer/footer__title.css';
+
+@import 'frame/frame.css';
+@import 'frame/frame__border.css';
+@import 'frame/frame__border_a.css';
+@import 'frame/frame__border_b.css';
+@import 'frame/frame__border_c.css';
+@import 'frame/frame__image.css';
+@import 'frame/frame__image_a.css';
+@import 'frame/frame__image_b.css';
+@import 'frame/frame__image_c.css';
+@import 'frame/frame_a.css';
+@import 'frame/frame_b.css';
+@import 'frame/frame_c.css';
+
+@import 'header/header.css';
+@import 'header/header__adress.css';
+@import 'header/header__burger.css';
+@import 'header/header__button.css';
+@import 'header/header__contacts.css';
+@import 'header/header__image.css';
+@import 'header/header__logo.css';
+@import 'header/header__navigation-wrap.css';
+@import 'header/header__navigation.css';
+@import 'header/header__phone.css';
+@import 'header/header__title.css';
+@import 'header/header__wrapper.css';
+
+@import 'how/how.css';
+@import 'how/how__container.css';
+@import 'how/how__grid.css';
+@import 'how/how__item.css';
+@import 'how/how__list.css';
+@import 'how/how__title.css';
+@import 'how/how__wrapper.css';
+
+@import 'location/location.css';
+@import 'location/location__container.css';
+@import 'location/location__map.css';
+@import 'location/location__wrapper.css';
+
+@import 'price/price.css';
+@import 'price/price__container.css';
+@import 'price/price__item.css';
+@import 'price/price__time.css';
+@import 'price/price__wrapper.css';
+
+@import 'security/security.css';
+@import 'security/security__container.css';
+
+@import 'rent/rent.css';
+@import 'rent/rent__button.css';
+@import 'rent/rent__container.css';
+
+@import 'slider/slider.css';
+@import 'slider/slider__arrow.css';
+@import 'slider/slider__control.css';
+@import 'slider/slider__controls.css';
+@import 'slider/slider__inner.css';
+@import 'slider/slider__overflow.css';
+@import 'slider/slider__radio.css';
+@import 'slider/slider__slide.css';
+
+@import 'reason/reason.css';
+@import 'reason/reason__container.css';
+@import 'reason/reason__frame-a.css';
+@import 'reason/reason__frame-b.css';
+@import 'reason/reason__frame-c.css';
+@import 'reason/reason__item.css';
+@import 'reason/reason__list.css';
+@import 'reason/reason__text-1.css';
+@import 'reason/reason__title.css';
+
+@font-face {
+  font-family: 'SoyuzGrotesk';
+  src: url('../fonts/SoyuzGroteskBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}

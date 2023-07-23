@@ -1,0 +1,10 @@
+.rent__button {
+  width: 220px;
+  height: 50px;
+}
+@media (min-width: 1440px) {
+  .rent__button {
+    width: 315px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,8 @@
+.slider__slide {
+  width: 325px;
+}
+@media (min-width: 1440px) {
+  .slider__slide {
+    width: 480px;
+  }
+}

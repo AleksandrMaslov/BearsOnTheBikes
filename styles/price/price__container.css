@@ -1,6 +1,17 @@
 .price__container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 0 20px 80px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .price__container {
+    margin: 0 30px 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .price__container {
+    margin: 0 160px 160px;
+  }
 }

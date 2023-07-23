@@ -1,0 +1,17 @@
+.reason__frame-a {
+  position: absolute;
+  left: -70px;
+  top: 62px;
+}
+@media (min-width: 768px) {
+  .reason__frame-a {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .reason__frame-a {
+    display: initial;
+    left: -500px;
+    top: 0;
+  }
+}

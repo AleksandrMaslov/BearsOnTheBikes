@@ -4,6 +4,9 @@
   display: none;
   align-items: center;
   justify-content: center;
+  margin: 0 20px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   background-color: rgba(136, 136, 136, 0.1);
 
@@ -22,6 +25,14 @@
 
 .slider__control:hover {
   background-color: rgba(136, 136, 136, 0.5);
+}
+
+@media (min-width: 1440px) {
+  .slider__control {
+    margin: 0 45px;
+    height: 60px;
+    width: 60px;
+  }
 }
 
 #slider__slide-1:checked ~ .slider__controls .slider__control:nth-child(2),

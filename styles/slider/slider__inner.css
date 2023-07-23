@@ -8,4 +8,45 @@
   -moz-transition: var(--innter-transition);
   -o-transition: var(--innter-transition);
   transition: var(--innter-transition);
+
+  --position-1: 0;
+  --position-2: -68.5%;
+  --position-3: -147.5%;
+  --position-4: -226.5%;
+
+  --position-2-tablet: -40%;
+  --position-3-tablet: -85%;
+  --position-4-tablet: -130%;
+
+  --position-2-desktop: -33.33%;
+  --position-3-desktop: -66.66%;
+  --position-4-desktop: -100%;
+}
+
+#slider__slide-1:checked ~ .slider__overflow .slider__inner {
+  left: var(--position-1);
+}
+#slider__slide-2:checked ~ .slider__overflow .slider__inner {
+  left: var(--position-2);
+}
+#slider__slide-3:checked ~ .slider__overflow .slider__inner {
+  left: var(--position-3);
+}
+#slider__slide-4:checked ~ .slider__overflow .slider__inner {
+  left: var(--position-4);
+}
+
+@media (min-width: 768px) {
+  .slider__inner {
+    --position-2: var(--position-2-tablet);
+    --position-3: var(--position-3-tablet);
+    --position-4: var(--position-4-tablet);
+  }
+}
+@media (min-width: 1440px) {
+  .slider__inner {
+    --position-2: var(--position-2-desktop);
+    --position-3: var(--position-3-desktop);
+    --position-4: var(--position-4-desktop);
+  }
 }
