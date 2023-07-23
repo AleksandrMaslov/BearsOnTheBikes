@@ -7,7 +7,7 @@
   color: #999;
   border-radius: 5px;
   border: 1px solid #abc2e8;
-  padding: 4px 11.5px;
+  padding: 4px 11.5px 6px;
   cursor: pointer;
 
   --button-bg-transition: background-color 0.1s ease-in-out;
