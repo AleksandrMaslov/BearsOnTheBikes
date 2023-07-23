@@ -1,9 +1,8 @@
 .modal {
   z-index: 99;
-  position: absolute;
+  position: fixed;
   top: 0;
-  bottom: 0;
-  width: 100%;
+  width: inherit;
   opacity: 0;
   display: none;
   --modal-overlay-transition: opacity 0.2s ease-in-out;
@@ -16,4 +15,8 @@
 .modal:target {
   opacity: 1;
   display: initial;
+}
+
+.body:has(.modal:target) {
+  overflow: hidden;
 }
