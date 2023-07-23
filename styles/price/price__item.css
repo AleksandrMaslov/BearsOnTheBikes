@@ -1,0 +1,28 @@
+.price__item {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.price__item:not(:last-child) {
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid #fff;
+}
+
+.price__item:nth-child(3) {
+  margin-right: 0;
+  border: none;
+}
+
+@media (min-width: 1440px) {
+  .price__item:not(:last-child) {
+    margin-right: 40px;
+    padding-right: 40px;
+  }
+
+  .price__item:nth-child(3) {
+    border-right: 1px solid #fff;
+  }
+}

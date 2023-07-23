@@ -1,0 +1,12 @@
+.title-h2 {
+  font-family: 'SoyuzGrotesk', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35.2px;
+}
+@media (min-width: 768px) {
+  .title-h2 {
+    font-size: 61px;
+    line-height: 67.1px;
+  }
+}

@@ -1,0 +1,16 @@
+.reason__container {
+  position: relative;
+  margin: 0 20px 80px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .reason__container {
+    margin: 0 30px 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .reason__container {
+    margin: 0 390px 160px;
+    width: 545px;
+  }
+}

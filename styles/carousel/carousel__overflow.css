@@ -1,0 +1,11 @@
+.carousel__overflow {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  width: 100%;
+}
+@media (min-width: 1440px) {
+  .carousel__overflow {
+    padding: 160px 0;
+  }
+}

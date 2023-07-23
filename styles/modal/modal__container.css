@@ -1,0 +1,14 @@
+.modal__container {
+  position: relative;
+  margin: 30px;
+}
+@media (min-width: 768px) {
+  .modal__container {
+    margin: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .modal__container {
+    margin: 50px;
+  }
+}

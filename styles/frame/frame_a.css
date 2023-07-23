@@ -1,0 +1,10 @@
+.frame_a {
+  width: 225px;
+  height: 305px;
+}
+@media (min-width: 1440px) {
+  .frame_a {
+    width: 345px;
+    height: 520px;
+  }
+}

@@ -1,0 +1,16 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  --slide-width: 230px;
+  --slide-width-desktop: 315px;
+  --slide-gap: 20px;
+  --slide-gap-desktop: 30px;
+}
+@media (min-width: 1440px) {
+  .carousel {
+    --slide-width: var(--slide-width-desktop);
+    --slide-gap: var(--slide-gap-desktop);
+  }
+}

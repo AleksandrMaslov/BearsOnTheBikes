@@ -1,0 +1,13 @@
+.header__navigation-wrap {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .header__navigation-wrap {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__navigation-wrap {
+    margin: 0 45px;
+  }
+}

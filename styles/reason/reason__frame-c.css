@@ -1,0 +1,20 @@
+.reason__frame-c {
+  margin-top: 80px;
+  margin-left: 70px;
+}
+@media (min-width: 768px) {
+  .reason__frame-c {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .reason__frame-c {
+    top: auto;
+    bottom: 0;
+    right: -560px;
+    margin: 80px 0px 0px 375px;
+  }
+}

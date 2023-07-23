@@ -1,0 +1,11 @@
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+}
+@media (min-width: 1440px) {
+  .modal__form {
+    gap: 60px;
+  }
+}

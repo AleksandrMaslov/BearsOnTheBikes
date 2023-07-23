@@ -1,0 +1,21 @@
+.frame__image_b {
+  top: 0;
+  right: 0;
+  width: 215px;
+  height: 325px;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .frame__image_b {
+    width: 240px;
+    height: 350px;
+    border-radius: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .frame__image_b {
+    width: 430px;
+    height: 650px;
+    border-radius: 30px;
+  }
+}

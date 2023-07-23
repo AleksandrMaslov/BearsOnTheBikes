@@ -1,0 +1,21 @@
+.frame__border_b {
+  bottom: 0;
+  left: 0;
+  width: 215px;
+  height: 300px;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .frame__border_b {
+    width: 210px;
+    height: 330px;
+    border-radius: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .frame__border_b {
+    width: 430px;
+    height: 610px;
+    border-radius: 30px;
+  }
+}

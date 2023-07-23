@@ -1,0 +1,15 @@
+.frame__image_a {
+  width: 200px;
+  height: 290px;
+  top: 0;
+  right: 0;
+  border-radius: 18px;
+}
+@media (min-width: 1440px) {
+  .frame__image_a {
+    width: 345px;
+    height: 490px;
+    top: 0;
+    border-radius: 30px;
+  }
+}

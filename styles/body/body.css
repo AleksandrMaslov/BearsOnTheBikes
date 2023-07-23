@@ -1,0 +1,14 @@
+.body {
+  position: relative;
+  width: 414px;
+}
+@media (min-width: 768px) {
+  .body {
+    width: 720px;
+  }
+}
+@media (min-width: 1440px) {
+  .body {
+    width: 1440px;
+  }
+}

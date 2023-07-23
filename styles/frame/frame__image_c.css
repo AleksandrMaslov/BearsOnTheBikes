@@ -1,0 +1,20 @@
+.frame__image_c {
+  top: 0;
+  right: 0;
+  width: 270px;
+  height: 380px;
+  border-radius: 26px;
+}
+@media (min-width: 768px) {
+  .frame__image_c {
+    border-radius: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .frame__image_c {
+    top: 30px;
+    width: 415px;
+    height: 540px;
+    border-radius: 30px;
+  }
+}

@@ -1,0 +1,20 @@
+.rent__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 60px 20px 80px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .rent__container {
+    margin: 80px 45px;
+    gap: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .rent__container {
+    margin: 160px 45px;
+    height: 100%;
+    width: 775px;
+  }
+}

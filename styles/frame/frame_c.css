@@ -1,0 +1,16 @@
+.frame_c {
+  width: 304px;
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .frame_c {
+    width: 295px;
+    height: 405px;
+  }
+}
+@media (min-width: 1440px) {
+  .frame_c {
+    width: 415px;
+    height: 570px;
+  }
+}

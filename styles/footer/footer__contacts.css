@@ -1,0 +1,10 @@
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 1440px) {
+  .footer__contacts {
+    text-align: right;
+  }
+}

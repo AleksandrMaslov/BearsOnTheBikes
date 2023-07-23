@@ -1,0 +1,8 @@
+.header__adress {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .header__adress {
+    display: initial;
+  }
+}

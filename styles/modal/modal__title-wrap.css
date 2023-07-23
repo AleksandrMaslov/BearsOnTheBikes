@@ -1,0 +1,10 @@
+.modal__title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 1440px) {
+  .modal__title-wrap {
+    gap: 20px;
+  }
+}
