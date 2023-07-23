@@ -1,4 +1,16 @@
 .location__wrapper {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  margin: 80px 20px;
+}
+@media (min-width: 768px) {
+  .location__wrapper {
+    margin: 80px 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .location__wrapper {
+    margin: 160px;
+  }
 }

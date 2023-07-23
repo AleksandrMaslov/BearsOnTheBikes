@@ -1,0 +1,8 @@
+.navigation__item {
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .navigation__item {
+    margin: 0;
+  }
+}

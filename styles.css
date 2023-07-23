@@ -12,6 +12,26 @@
 
 @import 'styles/button/button.css';
 
+@import 'styles/navigation/navigation.css';
+@import 'styles/navigation/navigation__item.css';
+@import 'styles/navigation/navigation__toggle.css';
+
+@import 'styles/modal/modal.css';
+@import 'styles/modal/modal__anchor.css';
+@import 'styles/modal/modal__button.css';
+@import 'styles/modal/modal__close.css';
+@import 'styles/modal/modal__container.css';
+@import 'styles/modal/modal__form.css';
+@import 'styles/modal/modal__input-wrap.css';
+@import 'styles/modal/modal__input.css';
+@import 'styles/modal/modal__overlay.css';
+@import 'styles/modal/modal__title-wrap.css';
+@import 'styles/modal/modal__window.css';
+
+@import 'styles/catalog/catalog.css';
+@import 'styles/catalog/catalog__container.css';
+@import 'styles/catalog/catalog__title.css';
+
 @import 'styles/carousel/carousel.css';
 @import 'styles/carousel/carousel__anchor.css';
 @import 'styles/carousel/carousel__bullet.css';
@@ -21,10 +41,6 @@
 @import 'styles/carousel/carousel__overflow.css';
 @import 'styles/carousel/carousel__radio.css';
 @import 'styles/carousel/carousel__slide.css';
-
-@import 'styles/catalog/catalog.css';
-@import 'styles/catalog/catalog__container.css';
-@import 'styles/catalog/catalog__title.css';
 
 @import 'styles/footer/footer.css';
 @import 'styles/footer/footer__contacts.css';
@@ -67,6 +83,11 @@
 @import 'styles/how/how__list.css';
 @import 'styles/how/how__title.css';
 @import 'styles/how/how__wrapper.css';
+
+@import 'styles/location/location.css';
+@import 'styles/location/location__container.css';
+@import 'styles/location/location__map.css';
+@import 'styles/location/location__wrapper.css';
 
 @font-face {
   font-family: 'SoyuzGrotesk';

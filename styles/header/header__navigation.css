@@ -18,7 +18,10 @@
 
 @media (min-width: 768px) {
   .header__navigation {
+    position: static;
+    flex-direction: row;
     gap: 30px;
+    max-height: fit-content;
     background-color: #111;
     color: #fff;
   }

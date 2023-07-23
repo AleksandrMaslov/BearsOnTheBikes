@@ -1,4 +1,10 @@
 .modal__input-wrap {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+@media (min-width: 1440px) {
+  .modal__input-wrap {
+    gap: 10px;
+  }
 }
