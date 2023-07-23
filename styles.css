@@ -3,6 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 @import 'styles/body/body.css';
+@import 'styles/body/body_bg_dark.css';
+@import 'styles/body/body_bg_light.css';
+@import 'styles/body/body_bg_gradient.css';
+
+@import 'styles/burger/burger.css';
+@import 'styles/burger/burger__item.css';
+
+@import 'styles/button/button.css';
+
+@import 'styles/carousel/carousel.css';
+@import 'styles/carousel/carousel__anchor.css';
+@import 'styles/carousel/carousel__bullet.css';
+@import 'styles/carousel/carousel__bullets.css';
+@import 'styles/carousel/carousel__button.css';
+@import 'styles/carousel/carousel__inner.css';
+@import 'styles/carousel/carousel__overflow.css';
+@import 'styles/carousel/carousel__radio.css';
+@import 'styles/carousel/carousel__slide.css';
 
 @font-face {
   font-family: 'SoyuzGrotesk';

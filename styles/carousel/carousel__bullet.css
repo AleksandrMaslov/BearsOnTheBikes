@@ -3,7 +3,8 @@
   border: 1px #fff solid;
   border-radius: 50%;
   cursor: pointer;
-
+  width: 10px;
+  height: 10px;
   --bullet-transition: background-color 0.1s ease-in;
   -webkit-transition: var(--bullet-transition);
   -moz-transition: var(--bullet-transition);
@@ -13,6 +14,13 @@
 
 .carousel__bullet:hover {
   background-color: rgb(255, 240, 240);
+}
+
+@media (min-width: 1440px) {
+  .carousel__bullet {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 #carousel__slide-1:checked ~ .carousel__bullets .carousel__bullet:nth-child(1),

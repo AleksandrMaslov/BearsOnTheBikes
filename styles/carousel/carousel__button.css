@@ -2,19 +2,26 @@
   flex: 1;
   border-radius: 10px;
   border: 1.4px solid #555;
-
   font-family: 'Inter', sans-serif;
+  font-size: 10px;
   font-weight: 600;
   line-height: 30px;
+  height: 33px;
   background-color: #fff;
   color: #555;
-
   pointer-events: none;
   cursor: pointer;
 }
 
 .carousel__button:hover {
   background-color: #fff;
+}
+
+@media (min-width: 1440px) {
+  .carousel__button {
+    height: 50px;
+    font-size: 14px;
+  }
 }
 
 #carousel__slide-1:checked

@@ -3,9 +3,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  gap: 15px;
+  padding: 30px;
   width: var(--slide-width);
+  border-radius: 20px;
   background-color: #fff;
+  box-shadow: 0px 2px 25px 14.5px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   --slide-transform: scale(1);
   -webkit-transform: var(--slide-transform);
@@ -24,6 +28,15 @@
 .carousel__slide:hover {
   opacity: 0.7;
   filter: saturate(80%);
+}
+
+@media (min-width: 1440px) {
+  .carousel__slide {
+    gap: 20px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 35px 20px rgba(0, 0, 0, 0.09);
+  }
 }
 
 #carousel__slide-1:checked ~ .carousel__overflow .carousel__slide:nth-child(1),
