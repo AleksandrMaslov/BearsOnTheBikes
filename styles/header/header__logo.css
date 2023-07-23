@@ -1,4 +1,10 @@
 .header__logo {
   display: flex;
   align-items: center;
+  gap: 15px;
+}
+@media (min-width: 1440px) {
+  .header__logo {
+    gap: 20px;
+  }
 }

@@ -1,0 +1,8 @@
+.how__wrapper {
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .how__wrapper {
+    width: initial;
+  }
+}

@@ -1,8 +1,9 @@
 .header__title {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
   line-height: 30px;
-  font-weight: 700;
-  letter-spacing: 1.1px;
   text-transform: uppercase;
 
   --logo-gradient: 255deg, #abc2e8 0%, #f2bcb9 46.35%, #f5a366 100%;
@@ -20,4 +21,16 @@
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
   color: transparent;
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+  }
 }

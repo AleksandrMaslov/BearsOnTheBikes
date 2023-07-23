@@ -1,7 +1,0 @@
-.how__grid {
-  display: grid;
-  gap: 30px;
-  --cell-size: 85px;
-  grid-template-columns: var(--cell-size) var(--cell-size) var(--cell-size);
-  grid-template-rows: var(--cell-size) var(--cell-size) var(--cell-size);
-}

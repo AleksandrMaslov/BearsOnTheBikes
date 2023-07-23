@@ -1,0 +1,8 @@
+.how__title {
+  margin-bottom: 30px;
+}
+@media (min-width: 1440px) {
+  .how__title {
+    margin-bottom: 50px;
+  }
+}

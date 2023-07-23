@@ -3,5 +3,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 80px 20px;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .how__container {
+    margin: 80px 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .how__container {
+    margin: 160px;
+  }
 }

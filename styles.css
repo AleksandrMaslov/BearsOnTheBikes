@@ -47,6 +47,27 @@
 @import 'styles/frame/frame_b.css';
 @import 'styles/frame/frame_c.css';
 
+@import 'styles/header/header.css';
+@import 'styles/header/header__adress.css';
+@import 'styles/header/header__burger.css';
+@import 'styles/header/header__button.css';
+@import 'styles/header/header__contacts.css';
+@import 'styles/header/header__image.css';
+@import 'styles/header/header__logo.css';
+@import 'styles/header/header__navigation-wrap.css';
+@import 'styles/header/header__navigation.css';
+@import 'styles/header/header__phone.css';
+@import 'styles/header/header__title.css';
+@import 'styles/header/header__wrapper.css';
+
+@import 'styles/how/how.css';
+@import 'styles/how/how__container.css';
+@import 'styles/how/how__grid.css';
+@import 'styles/how/how__item.css';
+@import 'styles/how/how__list.css';
+@import 'styles/how/how__title.css';
+@import 'styles/how/how__wrapper.css';
+
 @font-face {
   font-family: 'SoyuzGrotesk';
   src: url('fonts/SoyuzGroteskBold.otf');

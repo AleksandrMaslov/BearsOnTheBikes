@@ -1,6 +1,17 @@
 .header__contacts {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: end;
   flex-grow: 1;
+}
+@media (min-width: 768px) {
+  .header__contacts {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  /* .header__contacts {
+    gap: 30px;
+  } */
 }
