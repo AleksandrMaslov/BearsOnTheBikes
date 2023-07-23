@@ -1,25 +1,24 @@
 .carousel__slide {
-  width: var(--slide-width);
+  z-index: 1;
   position: relative;
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  width: var(--slide-width);
   background-color: #fff;
-  opacity: 0.5;
-  filter: saturate(50%);
-  z-index: 1;
-
+  -webkit-tap-highlight-color: transparent;
   --slide-transform: scale(1);
   -webkit-transform: var(--slide-transform);
   -moz-transform: var(--slide-transform);
   -o-transform: var(--slide-transform);
   transform: var(--slide-transform);
-
   --slide-transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition: var(--slide-transition);
   -moz-transition: var(--slide-transition);
   -o-transition: var(--slide-transition);
   transition: var(--slide-transition);
+  opacity: 0.5;
+  filter: saturate(50%);
 }
 
 .carousel__slide:hover {
