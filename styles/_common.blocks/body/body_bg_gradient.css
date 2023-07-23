@@ -1,0 +1,8 @@
+.body_bg_gradient {
+  --catalog-gradient: 154deg, #abc2e8 0%, #f2bcb9 46.35%, #f5a366 100%;
+  background: -webkit-linear-gradient(var(--catalog-gradient));
+  background: -moz-linear-gradient(var(--catalog-gradient));
+  background: -o-linear-gradient(var(--catalog-gradient));
+  background: linear-gradient(var(--catalog-gradient));
+  color: #111;
+}

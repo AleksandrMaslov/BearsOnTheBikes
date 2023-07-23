@@ -1,0 +1,23 @@
+.header__title {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+
+  --logo-gradient: 255deg, #abc2e8 0%, #f2bcb9 46.35%, #f5a366 100%;
+  background: -webkit-linear-gradient(var(--logo-gradient));
+  background: -moz-linear-gradient(var(--logo-gradient));
+  background: -o-linear-gradient(var(--logo-gradient));
+  background: linear-gradient(var(--logo-gradient));
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  color: transparent;
+}

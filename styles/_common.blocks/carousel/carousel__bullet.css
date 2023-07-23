@@ -1,0 +1,28 @@
+.carousel__bullet {
+  display: inline-block;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  cursor: pointer;
+
+  --bullet-transition: background-color 0.1s ease-in;
+  -webkit-transition: var(--bullet-transition);
+  -moz-transition: var(--bullet-transition);
+  -o-transition: var(--bullet-transition);
+  transition: var(--bullet-transition);
+}
+
+.carousel__bullet:hover {
+  background-color: rgb(255, 240, 240);
+}
+
+#carousel__slide-1:checked ~ .carousel__bullets .carousel__bullet:nth-child(1),
+#carousel__slide-2:checked ~ .carousel__bullets .carousel__bullet:nth-child(2),
+#carousel__slide-3:checked ~ .carousel__bullets .carousel__bullet:nth-child(3),
+#carousel__slide-4:checked ~ .carousel__bullets .carousel__bullet:nth-child(4),
+#carousel__slide-5:checked ~ .carousel__bullets .carousel__bullet:nth-child(5),
+#carousel__slide-6:checked ~ .carousel__bullets .carousel__bullet:nth-child(6),
+#carousel__slide-7:checked ~ .carousel__bullets .carousel__bullet:nth-child(7),
+#carousel__slide-8:checked ~ .carousel__bullets .carousel__bullet:nth-child(8),
+#carousel__slide-9:checked ~ .carousel__bullets .carousel__bullet:nth-child(9) {
+  background-color: #fff;
+}
