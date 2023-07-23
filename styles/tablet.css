@@ -32,13 +32,10 @@
 @import 'common.blocks/frame/frame.css';
 @import 'common.blocks/frame/frame__border.css';
 @import 'common.blocks/frame/frame__image.css';
-@import 'tablet.blocks/frame/frame_a.css';
 @import 'tablet.blocks/frame/frame_b.css';
 @import 'tablet.blocks/frame/frame_c.css';
-@import 'tablet.blocks/frame/frame__border_a.css';
 @import 'tablet.blocks/frame/frame__border_b.css';
 @import 'tablet.blocks/frame/frame__border_c.css';
-@import 'tablet.blocks/frame/frame__image_a.css';
 @import 'tablet.blocks/frame/frame__image_b.css';
 @import 'tablet.blocks/frame/frame__image_c.css';
 
