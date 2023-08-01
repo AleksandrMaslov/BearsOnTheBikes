@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import 'fonts.css';
 
 @import 'body/body.css';
 @import 'body/body_bg_dark.css';
@@ -131,10 +129,3 @@
 @import 'reason/reason__list.css';
 @import 'reason/reason__text-1.css';
 @import 'reason/reason__title.css';
-
-@font-face {
-  font-family: 'SoyuzGrotesk';
-  src: url('../fonts/SoyuzGroteskBold.otf');
-  font-weight: bold;
-  font-style: normal;
-}
