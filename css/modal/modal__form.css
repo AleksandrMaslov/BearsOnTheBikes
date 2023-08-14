@@ -6,6 +6,6 @@
 }
 @media (min-width: 1440px) {
   .modal__form {
-    gap: 60px;
+    gap: 20px;
   }
 }
